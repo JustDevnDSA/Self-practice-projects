@@ -1,0 +1,18 @@
+logo - fontawesome
+
+Font used::(goooglefonts)
+navbar - inter
+hero heading + all headings - syne
+herobody+all paragraphs+buttons - inter
+popular extension + all links head - syne else inter
+boxes body+heading - inter
+
+Colors used::
+hero background + navbar - #f0f9ff
+heading top - #2d2d2d
+button1 - #000000
+button2 - #fe9615
+love icon - #2098f5
+features boxes - #fff1e4 and #eefaf6
+popular extensions link - #489ef5
+footer - #13181b

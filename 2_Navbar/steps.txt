@@ -1,0 +1,6 @@
+// just make a nomal navbar with mobile first approach and add the bars use navDesktop
+//now make a navMobile div and make it fixed and inset-0
+//add xmark and bars a toggleMenu function to both 
+// in function toggle hidden class in navMobile div
+// and you know further steps just take reference if you ever feel problemn via this file 
+

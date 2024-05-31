@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Responsive using Tailwind CSS</title>
+    <script src="https://kit.fontawesome.com/14b8542e66.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <nav class="sticky top-0 left-0 right-0 w-full shadow-md">
+        <div id="navDesktop" class="flex items-center justify-between p-4 bg-slate-400">
+            <div class="text-2xl font-semibold logo ">
+                LOGO.in
+            </div>
+            <div id="navbar-toggle">
+                <i class="text-3xl cursor-pointer fa-solid fa-bars md:hidden" id="bars" onclick="toggleMenu()"></i>
+            </div>
+        </div>
+        
+        <div id="navMobile" class="fixed inset-0 hidden bg-white md:hidden">
+            <i class="flex items-center justify-end p-6 mt-1 text-3xl cursor-pointer fa-solid fa-xmark" onclick="toggleMenu()"></i>
+            <div class="flex items-center justify-center -mt-16 text-4xl font-bold logo ">
+                LOGO.in
+            </div>
+           <div class="flex items-center justify-between p-4">
+                <ul class="flex flex-col items-center justify-center gap-3 m-auto mt-10">
+                    <li class="p-2 text-xl font-semibold rounded-md cursor-pointer hover:bg-slate-100">Home</li>
+                    <li class="p-2 text-xl font-semibold rounded-md cursor-pointer hover:bg-slate-100">Buy Now</li>
+                    <li class="p-2 text-xl font-semibold rounded-md cursor-pointer hover:bg-slate-100">Share</li>
+                    <li class="p-2 text-xl font-semibold rounded-md cursor-pointer hover:bg-slate-100">Rent</li>
+                        
+                    <li><button class="px-6 py-4 text-xl font-semibold text-white bg-black rounded-md hover:bg-opacity-90">Register now</button></li>
+                </ul>
+           </div>
+          </div>
+        
+    </nav>
+
+
+    <main>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem similique necessitatibus, voluptas, adipisci quaerat facere reiciendis a voluptates veritatis ducimus dignissimos assumenda possimus tenetur quas. Iusto omnis inventore excepturi? Pariatur nemo sequi voluptates obcaecati hic iure fugiat quaerat amet similique quisquam aut excepturi ducimus eaque dolores cumque illum alias quidem cupiditate, neque repudiandae sint totam? Quidem quam debitis corrupti aliquid nemo nulla deleniti architecto magni numquam odit explicabo quo ipsa rem, optio ad magnam ratione totam et voluptate doloremque fugit molestias quibusdam illum fuga! Iure vero maiores illum fugiat, eligendi ab dolorum facere non quas numquam repellat, fuga, voluptas sunt ea aliquam reprehenderit quasi. Quos incidunt voluptatem doloremque ullam aut laudantium, delectus quis veniam voluptatibus recusandae corporis eum cum? Ducimus hic odio consequatur? Accusantium perspiciatis excepturi molestias, deleniti ipsa assumenda, sequi nulla itaque nesciunt labore quaerat illum quidem aliquam, nostrum amet? Praesentium ipsa illo, voluptates nesciunt laborum voluptatem illum distinctio beatae laboriosam. Et, magni omnis deserunt molestiae inventore ex quaerat facilis, libero ut sapiente nemo necessitatibus nisi impedit aut odio optio quasi quod maiores culpa, fugiat natus nesciunt? Voluptates impedit ex expedita rem. Ipsum, perspiciatis dolore quae vel odio laborum sequi possimus, quas ullam dicta libero reprehenderit voluptatum nisi magni.
+    </main>
+
+    <script>
+        const toggleMenu = () => {
+            navMobile.classList.toggle('hidden')
+        };
+        
+    </script>
+</body>
+</html>

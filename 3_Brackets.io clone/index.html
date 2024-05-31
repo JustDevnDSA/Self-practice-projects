@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Brackets - A modern, open source code editor that understands web design.
+    </title>
+    <script
+      src="https://kit.fontawesome.com/14b8542e66.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body>
+    <!-- NAVBAR STARTS HERE -->
+    <nav class="font-inter fixed w-full top-0 right-0 left-0">
+      <!-- desktop navbar -->
+      <div
+        id="navDesktop"
+        class="flex justify-between lg:px-16 md:px-10 items-center p-5 bg-topHero"
+      >
+        <!-- logo image -->
+        <div class="logo md:mr-10">
+          <img src="images/logo.svg" class="w-12 h-12" alt="logo" />
+        </div>
+        <!-- desktop links -->
+        <div class="lg:ml-20">
+          <ul class="md:flex hidden lg:gap-11 md:gap-8 text-sm font-medium p-1">
+            <li class="cursor-pointer hover:underline font-medium">
+              Contribute
+            </li>
+            <li class="cursor-pointer hover:underline font-medium">API Docs</li>
+            <li class="cursor-pointer hover:underline font-medium">
+              Extensions
+            </li>
+            <li class="cursor-pointer hover:underline font-medium">Support</li>
+          </ul>
+        </div>
+        <!-- brand icons -->
+        <div>
+          <div class="md:flex gap-11 md:gap-6 hidden">
+            <i class="fa-brands fa-github cursor-pointer"></i>
+            <i class="fa-brands fa-twitter cursor-pointer"></i>
+            <i class="fa-brands fa-discord cursor-pointer"></i>
+            <i class="fa-brands fa-youtube cursor-pointer"></i>
+          </div>
+        </div>
+        <!-- bars icon -->
+        <div class="md:hidden">
+          <i
+            class="fa-solid fa-bars cursor-pointer text-xl"
+            onclick="toggleMenu()"
+          ></i>
+        </div>
+      </div>
+      <!-- Mobile view navbar -->
+      <div
+        id="navMobile"
+        class="fixed z-10 hidden nav_hight md:hidden w-full border-t border-gray-200 bg-topHero shadow-gray-200 shadow-md"
+      >
+        <div>
+          <ul class="flex flex-col justify-between items-center gap-7 mt-10">
+            <li class="text-black text-xl font-medium leading-tight px-20">
+              <span class="hover:underline cursor-pointer">Contribute</span>
+            </li>
+            <li class="text-black text-xl font-medium leading-tight px-20">
+              <span class="hover:underline cursor-pointer">API Docs</span>
+            </li>
+            <li class="text-black text-xl font-medium leading-tight px-20">
+              <span class="hover:underline cursor-pointer">Extensions</span>
+            </li>
+            <li class="text-black text-xl font-medium leading-tight px-20">
+              <span class="hover:underline cursor-pointer">Support</span>
+            </li>
+
+            <li class="flex gap-4 text-xl mt-4">
+              <i class="fa-brands fa-github cursor-pointer"></i>
+              <i class="fa-brands fa-twitter cursor-pointer"></i>
+              <i class="fa-brands fa-discord cursor-pointer"></i>
+              <i class="fa-brands fa-youtube cursor-pointer"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- MAIN STARTS HERE -->
+    <main class="mt-20">
+      <!-- Hero Section -->
+      <div id="topHero" class="bg-topHero">
+        <!-- punch line and paragraph -->
+        <div id="punchLine" class="flex flex-col justify-between items-center">
+          <h1
+            class="font-syne text-4xl font-semibold px-10 m-auto text-center leading-snug py-6 mt-4 md:text-5xl md:px-40"
+          >
+            Modern, Powerful & Open source
+          </h1>
+          <p
+            class="px-24 md:px-44 lg:px-56 text-center text-xl leading-relaxed text-[#262626] mt-2"
+          >
+            With focused visual tools and preprocessor support, Brackets is a
+            modern text editor that makes it easy to design in the browser. It's
+            crafted from the ground up for web designers and front-end
+            developers.
+          </p>
+        </div>
+        <!-- both hero buttons -->
+        <div
+          id="buttons"
+          class="flex flex-col md:flex-row items-center justify-center gap-1 md:gap-3 mt-10"
+        >
+          <button
+            class="py-4 bg-button1 text-white w-72 rounded-md border border-black hover:bg-opacity-85"
+          >
+            <a href="#">Download</a>
+          </button>
+          <button
+            class="py-4 bg-button2 w-72 rounded-md border-2 border-black hover:bg-opacity-85"
+          >
+            <a href="#">Launch Web Editor</a>
+          </button>
+        </div>
+        <!-- below button text -->
+        <div class="flex flex-col items-center justify-center mt-6">
+          <p class="text-[#77797c] text-xs font-medium">
+            Installer Built and Signed by
+            <a class="text-[#2098f5]" href="#">phoenix.core.ai</a>
+          </p>
+          <p class="text-xs underline mt-3">Other Downloads</p>
+        </div>
+        <!-- hero image section -->
+        <div id="heroImage" class="mt-12">
+          <img src="images/hero1.png" class="px-12 m-auto" alt="hero imagge" />
+        </div>
+      </div>
+
+      <!-- Why use and made with -->
+      <div class="flex flex-col lg:flex-row mt-20 px-16">
+        <!-- why use -->
+        <div id="whyUseBrackets" class="flex-1">
+          <h2 class="font-syne text-[27px] py-5 font-semibold">
+            Why Use Brackets?
+          </h2>
+          <p class="text-[#4f4f52] text-[18px] leading-relaxed lg:pr-11">
+            Brackets is a lightweight, yet powerful, modern text editor. We
+            blend visual tools into the editor so you get the right amount of
+            help when you want it without getting in the way of your creative
+            process. You'll enjoy writing code in Brackets.
+          </p>
+        </div>
+        <!-- made with -->
+        <div id="madewith" class="flex-1">
+          <h2 class="font-syne text-[27px] py-5 font-semibold">
+            Made with
+            <span
+              ><i class="fa-solid fa-heart text-[#2098f5] text-xl"></i> </span
+            >and JavaScript
+          </h2>
+          <p class="text-[#4f4f52] text-[18px] leading-relaxed lg:pr-4">
+            Brackets is an open-source project, supported by an active and
+            passionate community. It's made by other web developers like you!
+            <a class="text-[#2098f5]" href="#">Learn How to Contribute…</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- FEATURES SECTION STARTS HERE -->
+      <div id="features" class="mt-20">
+        <h2 class="text-center font-syne text-[40px] font-bold">Features</h2>
+        <!-- 3 boxes -->
+        <div
+          id="boxes"
+          class="flex flex-wrap items-center gap-8 justify-center mt-7 px-2"
+        >
+          <!-- box1 -->
+          <div
+            id="box1"
+            class="flex flex-col items-center justify-center border border-gray-200 rounded-md w-[320px] h-64 pb-5 hover:shadow-lg transition-shadow"
+          >
+            <h2
+              class="bg-[#fff1e4] p-6 h-4 w-4 rounded-full flex items-center justify-center font-semibold"
+            >
+              1
+            </h2>
+            <h2 class="text-[17px] font-semibold mt-3">Inline Editors</h2>
+            <p
+              class="px-7 text-center text-sm text-[#77797c] leading-relaxed mt-1"
+            >
+              Instead of jumping between file tabs, Brackets lets you open a
+              window into the code you care about most.
+            </p>
+          </div>
+          <!-- box2 -->
+          <div
+            id="box2"
+            class="flex flex-col items-center justify-center border border-gray-200 rounded-md w-[320px] h-64 pb-5 hover:shadow-lg transition-shadow"
+          >
+            <h2
+              class="bg-[#fff1e4] p-6 h-4 w-4 rounded-full flex items-center justify-center font-semibold"
+            >
+              2
+            </h2>
+            <h2 class="text-[17px] font-semibold mt-3">Live Preview</h2>
+            <p
+              class="px-7 text-center text-sm text-[#77797c] leading-relaxed mt-1"
+            >
+              Get a real-time connection to your browser. Make changes to CSS
+              and HTML and you'll instantly see those changes on screen.
+            </p>
+          </div>
+          <!-- box3 -->
+          <div
+            id="box2"
+            class="flex flex-col items-center justify-center border border-gray-200 rounded-md w-[320px] h-64 pb-5 hover:shadow-lg transition-shadow"
+          >
+            <h2
+              class="bg-[#eefaf6] p-6 h-4 w-4 rounded-full flex items-center justify-center font-semibold"
+            >
+              3
+            </h2>
+            <h2 class="text-[17px] font-semibold mt-3">Preprocessor Support</h2>
+            <p
+              class="px-7 text-center text-sm text-[#77797c] leading-relaxed mt-1"
+            >
+              Work with preprocessors in a whole new way. We know how important
+              preprocessors are to your workflow.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- POPULAR EXTENSIONS -->
+      <div id="popularExtensions" class="mt-14 bg-topHero pb-20">
+        <h2 class="font-syne text-[24px] pt-20 pb-6 ml-5">
+          Popular Extensions
+        </h2>
+       <div class="flex flex-col md:flex-row  md:justify-between gap-8 ">
+         <!-- left side boxes of 4 -->
+         <div id="leftSide" class="ml-12 space-y-8 ">
+            <div id="box">
+              <h2 class="text-[#2098f5] font-syne text-[16px]">Git</h2>
+              <p class="text-[#4f4f52] text-[14px]">
+                Git integration for Brackets
+              </p>
+            </div>
+            <div id="box">
+              <h2 class="text-[#2098f5] font-syne text-[16px]">Emmet
+              </h2>
+              <p class="text-[#4f4f52] text-[14px]">
+                  High-speed HTML and CSS workflow.
+              </p>
+            </div>
+            <div id="box">
+              <h2 class="text-[#2098f5] font-syne text-[16px]">Beautify</h2>
+              <p class="text-[#4f4f52] text-[14px]">
+                  Format JavaScript, HTML, and CSS files.
+              </p>
+            </div>
+            <div id="box">
+              <h2 class="text-[#2098f5] font-syne text-[16px]">Markdown Preview</h2>
+              <p class="text-[#4f4f52] text-[14px]">
+                  Live preview of markdown documents.
+              </p>
+            </div>
+          </div>
+  
+          <!-- right side boxes of 4 -->
+          <div id="rightSide" class="ml-12  space-y-8   md:mr-24">
+              <div id="box">
+                <h2 class="text-[#2098f5] font-syne text-[16px]">File Icons</h2>
+                <p class="text-[#4f4f52] text-[14px]">
+                    File icons in Brackets’ file tree.
+                </p>
+              </div>
+              <div id="box">
+                <h2 class="text-[#2098f5] font-syne text-[16px]">Indent Guides
+                </h2>
+                <p class="text-[#4f4f52] text-[14px]">
+                    Show indent guides in the code editor.
+                </p>
+              </div>
+              <div id="box">
+                <h2 class="text-[#2098f5] font-syne text-[16px]">Autoprefixer</h2>
+                <p class="text-[#4f4f52] text-[14px]">
+                    Parse CSS and add vendor prefixes automatically.
+                </p>
+              </div>
+              <div id="box">
+                <h2 class="text-[#2098f5] font-syne text-[16px]">W3C Validation</h2>
+                <p class="text-[#4f4f52] text-[14px]">
+                    Simple W3C Validator.
+                </p>
+              </div>
+              <div id="button">
+                    <button class="text-[14px] px-7 py-4 text-black border-2 rounded-sm border-black hover:bg-black hover:text-white transition-all ">Check Out New Extensions</button>
+              </div>
+            </div>
+       </div>
+      </div>
+    </main>
+
+
+    <!-- POPUP ON STARTUP CODE (may be unresponsive in comparitively small devices)--> 
+    <div id="popupBottom" class="z-5 h-[270px] w-[450px]     fixed bottom-4  border-2 rounded-[3px] border-black right-3 bg-[#d0ecf5] p-4">
+        <div class="heading flex items-center justify-between">
+         <img src="images/phoenix.svg" class="w-10 m-1" alt="">
+         <h1 class="font-syne  text-[24px] -ml-6"> Introducing Phoenix Code Editor</h1>
+         <i class="fa-solid fa-xmark cursor-pointer text-xl" onclick="closePopup()"></i>
+        </div>
+        <div class="para p-2 pt-3">
+            <p class="text-[16px] text-[#010001]">Phoenix Code is the next generation of Brackets that Runs everywhere - Windows, macOS, Linux and Web Browsers.</p>
+            <p class="text-[#047edd] text-[16px]">Click here to read more.</p>
+        </div>
+        <div class="button p-2  flex items-center justify-between">
+            <button class="bg-button2 border-2 rounded-sm px-10 py-3 border-black flex  items-center gap-2 "><i class="fa-solid fa-download fa-lg"></i><span>Get it form phcode.io</span></button>
+            <div class="brands flex gap-4 text-2xl">
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+        </div>
+     </div>
+
+
+<!-- FOOTER SECTION STARTS HERE -->
+  <footer class="bg-[#13181b] text-white pb-28">
+    <div class=" flex flex-col lg:flex-row gap-6 md:justify-center ">
+        <!-- parent1 -->
+            <div id="parent1" class="flex flex-col md:flex-row pt-20 md:pt-10 px-12 gap-6 md:gap-24 md:items-center md:justify-center">
+                <!-- child1 -->
+                <div id="child1">
+                    <h2 class="text-white text-[14px]">Quick Links</h2>
+                    <ul class="list-disc list-inside">
+                        <li class="text-[#5f6569] "><span class="text-[#98D2FF] hover:text-white cursor-pointer transition-all text-[14px] ">Source Code on Github</span></li>
+                        <li class="text-[#5f6569] "><span class="text-[#98D2FF] hover:text-white cursor-pointer transition-all text-[14px] ">API Documentation</span></li>
+                        <li class="text-[#5f6569] "><span class="text-[#98D2FF] hover:text-white cursor-pointer transition-all text-[14px] ">Troubleshoooting Help</span></li>
+                        <li class="text-[#5f6569] "><span class="text-[#98D2FF] hover:text-white cursor-pointer transition-all text-[14px] ">Wiki</span></li>
+                    </ul>
+                </div>
+                <!-- child2 -->
+                <div id="child2">
+                    <h2 class="text-white text-[14px]">Videos</h2>
+                    <ul class="list-disc list-inside">
+                        <li class="text-[#5f6569]"><span class="text-[#98D2FF] hover:text-white cursor-pointer transition-all text-[14px] ">Introducing Brackets</span></li>
+                        <li class="text-[#5f6569]"><span class="text-[#98D2FF] hover:text-white cursor-pointer transition-all text-[14px] ">Live Development for HTML</span></li>
+                        <li class="text-[#5f6569]"><span class="text-[#98D2FF] hover:text-white cursor-pointer transition-all text-[14px] ">JavaScript Debugger for Brackets</span></li>
+                        <li class="text-[#5f6569]"><span class="text-[#98D2FF] hover:text-white cursor-pointer transition-all text-[14px] ">Tuts+ Introduction to Brackets</span></li>
+                        <li class="text-[#5f6569]"><span class="text-[#98D2FF] hover:text-white cursor-pointer transition-all text-[14px] ">Brackets Videos on Youtube</span></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- parent2 -->
+            <div id="parent2" class="flex flex-col md:flex-row px-12 gap-6 md:gap-24 pb-28 md:pb-20 md:pt-20 md:justify-center ">
+                <!-- child3 -->
+            <div id="child3" class="md:-ml-16 lg:-ml-0">
+                <h2 class="text-white text-[14px]">Get Involved</h2>
+                    <ul class="list-disc list-inside">
+                        <li class="text-[#5f6569]"><span class="text-[#98D2FF] hover:text-white cursor-pointer transition-all text-[14px] ">Checkout Current Issues on GitHub</span></li>
+                    </ul>
+            </div>
+            <!-- child4 -->
+            <div id="child4">
+                <h2 class="text-white text-[14px]">Keep in Touch</h2>
+                    <ul class="list-disc list-inside">
+                        <li class="text-[#5f6569]"><span class="text-[#98D2FF]  hover:text-white cursor-pointer transition-all text-[14px] ">Matrix</span></li>
+                        <li class="text-[#5f6569]"><span class="text-[#98D2FF] hover:text-white cursor-pointer transition-all  text-[14px] ">Discord</span></li>
+                        <li class="text-[#5f6569]"><span class="text-[#98D2FF]  hover:text-white cursor-pointer transition-all text-[14px] ">Reddit</span></li>
+                    </ul>
+            </div>
+           </div> 
+        </div>
+        <!-- last footer para -->
+        <div id="lastFooterPara" class="pt-16 px-6">
+         <p class="text-[#a6aab2] text-[13px] text-center">Brackets is maintained by the brackets.io community. It was founded by Adobe as a community guided, open source project to push web development editors to the next level.</p>
+        </div>
+
+        <!-- for educational and learning purpose only -->
+        <div id="educationOnly" class="pt-1">
+            <p class="text-[#a6aab2] text-xs text-center">" For Education and Learning Purpose Only "</p>
+           </div>
+  </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

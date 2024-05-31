@@ -1,0 +1,14 @@
+{
+  "name": "brackets_clone",
+  "version": "1.0.0",
+  "description": "cloning brackets website foreducational purpose",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "noob coder",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  }
+}
