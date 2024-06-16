@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0c0c0e;
+  color: #7bf707;
+}
+
+.container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container h1 {
+  font-size: 2.5rem;
+  border: 2px dotted #ffffff;
+  border-radius: 10px;
+  padding: 5px 20px;
+  margin-bottom: 30px;
+}
+
+.dice {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #333;
+  border-radius: 10px;
+  margin: 20px auto;
+  background-color: #fff;
+  position: relative;
+  margin: 50px;
+  margin-bottom: 70px;
+}
+
+.dice img {
+  width: 180%;
+  height: 180%;
+  border-radius: 10%;
+}
+
+.dice.rolling {
+  animation: rollDice 0.9s;
+}
+
+@keyframes rollDice {
+  0% {
+    transform: rotateX(0) rotateY(0);
+  }
+
+  25% {
+    transform: rotateX(360deg) rotateY(0);
+  }
+
+  50% {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+
+  75% {
+    transform: rotateX(720deg) rotateY(360deg);
+  }
+
+  100% {
+    transform: rotateX(720deg) rotateY(720deg);
+  }
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  background-color: #7bf707;
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 0.5em 1.59em;
+  border: 3px solid black;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em;
+  cursor: pointer;
+}
+
+button:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.18em 0.18em;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form UI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-[#171b2b] text-white">
+    <!-- MAIN FORM BODY -->
+
+    <!-- LOGIN FORM -->
+    <div id="formBody" class="flex justify-center items-center h-[100vh]">
+      <div
+        class="flex w-[78%] items-center bg-[#242949bd] h-[85vh] rounded-2xl"
+      >
+        <div id="inputFields" class="w-1/2 flex flex-col gap-4 pl-20">
+          <div id="actions" class="gap-10 flex font-medium text-lg mb-10 pt-1">
+            <a href="#"
+              ><span class="border-b-2 pb-1 border-[#f19751]">Login</span></a
+            >
+            <a href="#"><span class="text-gray-500">Register</span></a>
+          </div>
+          <div id="heroText" class="space-x-1 mb-4 space-y-1">
+            <h1 class="text-4xl font-semibold">Welcome Back!</h1>
+            <p class="text-sm">Use your email to login</p>
+          </div>
+          <div id="inputs" class="space-y-1">
+            <div
+              class="relative py-3 bg-[#676f9d] bg-opacity-60 w-fit rounded-sm border-l-[3px] border-[#f19751]"
+            >
+              <span class="absolute text-xs text-gray-300 top-1 left-4"
+                >Email</span
+              >
+              <input
+                type="text"
+                class="bg-transparent py-4 pr-36 pl-4 outline-none"
+                name="email"
+              />
+            </div>
+            <div
+              class="relative py-3 bg-[#676f9d] bg-opacity-60 w-fit rounded-sm border-l-[3px] border-[#f19751]"
+            >
+              <span class="absolute text-xs text-gray-300 top-1 left-4"
+                >Password</span
+              >
+              <input
+                id="password"
+                type="password"
+                class="bg-transparent py-4 pr-36 pl-4 outline-none"
+                name="password"
+              />
+              <i
+                id="eye"
+                class="fa-solid fa-eye-slash fa-flip-horizontal absolute top-[30px] right-3 text-gray-400 cursor-pointer"
+              ></i>
+            </div>
+          </div>
+          <div id="more" class="flex justify-between">
+            <div class="flex gap-1">
+              <div
+                class="w-[10px] h-[10px] p-[9px] border relative rounded border-[#f19751] flex items-center justify-center cursor-pointer"
+                id="checkBox"
+              >
+                <i
+                  class="fa-solid hidden fa-check text-[#f19751] absolute"
+                  id="check"
+                ></i>
+              </div>
+              <span class="text-sm">Remember Me</span>
+            </div>
+            <div>
+              <a href="#"
+                ><span class="text-sm text-gray-400 pr-28"
+                  >Forgot Password?</span
+                ></a
+              >
+            </div>
+          </div>
+          <div id="button" class="my-2">
+            <button
+              class="bg-[#f19751] text-black font-semibold py-2 px-10 hover:bg-opacity-90 rounded-md outline-none border-none"
+                type="submit"
+            >
+              Login
+            </button>
+          </div>
+          <div id="socials" class="text-gray-400 space-x-5 mt-2 mb-2">
+            <span class="text-sm">Login with Socials</span>
+            <span class="space-x-4">
+              <a href="#">
+                <i
+                  class="fa-brands cursor-pointer fa-square-facebook fa-2xl"
+                ></i
+              ></a>
+              <a href="#"
+                ><i
+                  class="fa-brands cursor-pointer fa-square-instagram fa-2xl"
+                ></i
+              ></a>
+            </span>
+          </div>
+        </div>
+        <div id="image" class="w-1/2 h-full">
+          <img
+            src="image.jpg"
+            class="w-full h-full object-cover rounded-r-2xl"
+            alt="image"
+          />
+        </div>
+      </div>
+    </div>
+
+
+  </body>
+  <script src="script.js"></script>
+</html>
