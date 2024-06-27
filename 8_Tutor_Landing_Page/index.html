@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutor Landing Page</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <!-- NAVBAR SECTION -->
+    <header>
+        <nav class="flex justify-between   fixed top-0 bg-white z-30 px-12 lg:px-44 py-4 items-center w-full">
+            <div id="logo" class="flex  items-center gap-1 lg:ml-6">
+                <img src="images/logo.png" class="w-10" alt="logo">
+                <span class="text-lf font-extrabold text-xl">Tutor</span>
+            </div>
+            <div id="links"> 
+                <ul class="md:flex hidden gap-6 md:gap-4  lg:gap-6 lg:ml-14 md:ml-10 items-center text-sm  font-semibold  ">
+                    <li class="tracking-wide hover:text-blue"><a href="#">Home</a></li>
+                    <li class="tracking-wide hover:text-blue"><a href="#">For Students</a></li>
+                    <li class="tracking-wide hover:text-blue"><a href="#">Resources</a></li>
+                    <li class="tracking-wide hover:text-blue"><a href="#">About Us</a></li>
+                    <li class="tracking-wide hover:text-blue"><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+            <div id="cta" class="md:flex hidden">
+                <button class="py-2 px-6 font-bold"><a href="#">Sign In</a></button>
+                <button class="text-white bg-blue px-6 py-2 rounded-full font-semibold"><a href="#">Register</a></button>
+            </div>
+            <div id="bars" class="md:hidden">
+                <i id="barsIcon" class="fa-solid fa-bars text-xl" ></i>
+            </div>
+         </nav>
+         <div id="mobileMenu" class="h-screen fixed inset-0 top-[72px] hidden  bg-white   md:hidden w-ful z-20 border-t border-opacity-50">
+           <div class="flex flex-col items-center justify-center">
+            <div id="links">
+                <ul class="flex flex-col gap-6 items-center text-lg pt-14 font-semibold">
+                    <li class="tracking-wide hover:text-blue"><a href="#">Home</a></li>
+                    <li class="tracking-wide hover:text-blue"><a href="#">For Students</a></li>
+                    <li class="tracking-wide hover:text-blue"><a href="#">Resources</a></li>
+                    <li class="tracking-wide hover:text-blue"><a href="#">About Us</a></li>
+                    <li class="tracking-wide hover:text-blue"><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+            <div id="cta" class="flex gap-5 justify-center  mt-14">
+                <button class="py-2 font-bold"><a href="#">Sign In</a></button>
+                <button class="text-white bg-blue px-6 py-2 rounded-full font-semibold"><a href="#">Register</a></button>
+            </div>
+           </div>
+         </div>
+    </header>
+
+
+    <!-- BELOW NAVBAR MESSAGE -->
+     <div class="mt-[72px]">
+        <p class="text-sm text-center font-semibold py-1 px-1 bg-yellow">Are you a university or school student for an online tutoring partnership? <span class="text-blue font-bold">Talk to us</span></p>
+     </div>
+
+     <!-- TOP-HERO-SECTION -->
+      <div id="topHero" class="bg-white">
+        <div class="flex flex-col lg:space-x-32 lg:py-8 md:flex-row justify-center items-center">
+            <div id="text" class="py-6 pt-10">
+                <div class="px-12 lg:space-y-2">
+                    <h1 class="text-sm font-extrabold text-red">100% SATISFACTION GURANTEE</h1>
+                <h1 class="text-4xl md:text-5xl font-semibold  py-3">Find Your<br><span class="relative">Perfect Tutor <img src="images/t_bottom.png" class="absolute w-20 right-0 md:-bottom-5 -bottom-[22px] rotate-[20deg]" alt=""><img src="images/t_top.png" class="absolute -top-5 -right-8" alt=""></span></h1>
+               <div>
+                <p class="font-medium pb-1">We help you find perfect tutor for 1-on-1 lessons,<span class="md:hidden">It is completely free and private</span></p>
+                <p class="font-medium hidden md:block">It is completely free and private.</p>
+               </div>
+                <div id="buttons" class="text-sm font-semibold pt-3 space-x-2 lg:space-x-5">
+                    <button class="bg-yellow px-5 py-2 rounded-full"><a href="#">Get started</a></button>
+                    <button class=""><a href="#"><span><i class="fa-solid fa-play text-blue bg-[#D8E7FF] flex items-center rounded-full justify-center p-3 px-[14px]"></i></span><span class="pl-1">See how it works</span></a></button>
+                </div>
+                </div>
+            </div>
+            <div id="image" class="">
+                <img src="images/1.png" alt="">
+            </div>
+        </div>
+      </div>
+
+      <!-- COUNTER SECTION -->
+       <div class="bg-blue mt-6 text-white flex flex-col md:flex-row lg:py-3 md:py-3 justify-center items-center space-y-3 lg:gap-20 md:gap-16">
+        <div class="flex flex-col items-center md:items-start py-3 pt-5"><span id="one" class="font-bold text-2xl">870</span><span class="text-sm font-medium">Expert Tutors</span></div>
+        <div class="w-[70%] h-[0.5px] opacity-35 bg-white md:hidden"></div>
+        <div class="w-[1px] h-[60px] opacity-35 bg-white hidden md:block"></div>
+        <div class="flex flex-col items-center md:items-start py-3"><span class="font-bold text-2xl"><span id="two">20,000</span><span>+</span></span><span class="text-sm font-medium">Hours Tutored</span></div>
+        <div class="w-[70%] h-[0.5px] opacity-35 bg-white md:hidden"></div>
+        <div class="w-[1px] h-[60px] opacity-35 bg-white hidden md:block"></div>
+        <div class="flex flex-col items-center  md:items-start py-3"><span id="three" class="font-bold text-2xl">298</span><span class="text-sm font-medium">Subjects and Courses</span></div>
+        <div class="w-[70%] h-[0.5px] opacity-35 bg-white md:hidden"></div>
+        <div class="w-[1px] h-[60px] opacity-35 bg-white hidden md:block"></div>
+        <div class="flex flex-col items-center md:items-start py-3 pb-5"><span id="four" class="font-bold text-2xl">72,920</span><span class="text-sm font-medium">Active Students</span></div>
+       </div>
+
+
+       <!-- WHY CHOOSE US -->
+       <div id="whycoose" class="mt-8">
+       <div class="py-3">
+        <h1 class="text-sm font-extrabold text-red text-center">WHY CHOOSE US</h1>
+        <h1 class="text-center text-3xl font-semibold py-2 tracking-tight">Benifits of online tutoring <br> services with us</h1>
+       </div>
+        <div id="cards" class="flex flex-wrap justify-center items-center mt-4 gap-6">
+            <div id="card" class="bg-white w-72 rounded-md px-6 py-5 shadow-md space-y-2 hover:shadow-lg">
+                <i class="fa-solid fa-user-group bg-blue text-white p-3 rounded-md"></i>
+                <h1 class="font-bold pt-1">One-on-one Teaching</h1>
+                <p class="font-medium">All of our special education experts have a degree in special education.</p>
+            </div>
+            <div id="card" class="bg-white w-72 rounded-md px-6 py-5 shadow-md space-y-2 hover:shadow-lg">
+                <i class="fa-solid fa-clock bg-green text-white p-3 rounded-md"></i>
+                <h1 class="font-bold pt-1">24/7 Tutor Availability</h1>
+                <p class="font-medium">Our tutors are always available to respond you quick as possible for you.</p>
+            </div>
+            <div id="card" class="bg-white w-72 rounded-md px-6 py-5 shadow-md space-y-2 hover:shadow-lg">
+                <i class="fa-solid fa-chalkboard-user bg-red text-white p-3 rounded-md"></i>
+                <h1 class="font-bold pt-1">Interactive Whiteboard</h1>
+                <p class="font-medium">Our digital whiteboard equipped with audio and video chats features</p>
+            </div>
+            <div id="card" class="bg-white w-72 rounded-md px-6 py-5 shadow-md space-y-2 hover:shadow-lg">
+                <i class="fa-solid fa-coins bg-pink text-white p-3 rounded-md"></i>
+                <h1 class="font-bold pt-1">Affordable Prices</h1>
+                <p class="font-medium">Choose an expert tutor based on your budget and per hour.</p>
+            </div>
+        </div>
+       </div>
+       
+<!-- CUSTOMIZE WITH YOUR SHEDULE -->
+ <div id="cutomize" class="flex flex-col lg:flex-row justify-center items-center px-7 mt-10 py-7 gap-5 lg:gap-0 lg:px-20">
+    <div id="image" class="lg:flex-1 ">
+        <img src="images/2.png" class="w-[500px]"  alt="">
+    </div>
+    <div id="text" class="flex flex-col lg:flex-1  items-center justify-center">
+        <h1 class="text-sm font-extrabold text-red">CUSTOMIZE WITH YOUR SHEDULE</h1>
+        <h1 class="text-center text-2xl font-semibold py-2">Personalized Professional Online Tutor on Your Shedule</h1>
+        <p class="text-sm text-gray-900 tracking-wide text-center mt-2">Our sheduling system allow you to select based on your free time.Lorem ipsum demo text for template. Keep track of your students class and tutoring shedules,and never miss your lectures. The best online class sheduling system with easy accessibility.Lorem ipsum is a placeholder text commonly used to demonstrate the visual form</p>
+        <button class="bg-yellow px-5 py-2 rounded-full font-bold mt-6"><a href="#">Get started</a></button>
+    </div>
+ </div>
+
+<!-- CUSTOMIZE 2 -->
+<div id="cutomize" class="flex pb-12  flex-col justify-center lg:ml-20 items-center px-7 py-7 pt-4 mt-10 gap-5 lg:gap-16 lg:px-20  lg:flex-row-reverse ">
+    <div id="image" class="lg:flex-1">
+        <img src="images/3.png" class="w-[500px]"  alt="">
+    </div>
+    <div id="text" class="flex flex-col lg:flex-1 items-center justify-center">
+        <h1 class="text-sm font-extrabold text-red">CUSTOMIZE WITH YOUR SHEDULE</h1>
+        <h1 class="text-center text-2xl font-semibold py-2">Talented and Qualified Tutors to Serve You for Help</h1>
+        <p class="text-sm text-gray-900 tracking-wide text-center mt-2">Our sheduling system allow you to select based on your free time.Lorem ipsum demo text for template. Keep track of your students class and tutoring shedules,and never miss your lectures. The best online class sheduling system with easy accessibility.Lorem ipsum is a placeholder text commonly used.</p>
+        <button class="bg-yellow  px-5 py-2 rounded-full font-bold mt-6"><a href="#">Get started</a></button>
+    </div>
+    
+ </div>
+
+
+
+ <!-- SUBJECT SECTION -->
+  <div id="subject" class="bg-white pt-8 pb-16">
+    <div class="py-5">
+        <h1 class="text-sm font-extrabold text-red text-center">OUR TUTOR SUBJECT</h1>
+        <h1 class="text-center text-3xl font-semibold py-2 tracking-tighter">Find Online Tutor in Any Subject</h1>
+       </div>
+       <div id="cards-one" class="flex flex-wrap justify-center items-centers gap-4">
+        <div id="card" class="border-2 rounded-md w-56 py-3 px-5 space-x-2">
+            <i class="fa-solid p-3 bg-[#D8E7FF] rounded-md   text-blue fa-gear"></i>
+            <span class="font-bold">Engineering</span>
+        </div>
+        <div id="card" class="border-2 rounded-md w-56 py-3 px-5 space-x-2">
+            <i class="fa-solid p-3 bg-[#D2FFE7] rounded-md   text-[#71c4a6] fa-code"></i>
+            <span class="font-bold">Programming</span>
+        </div>
+        <div id="card" class="border-2 rounded-md w-56 py-3 px-5 space-x-2">
+            <i class="fa-solid p-3 bg-[#f0d7ff] rounded-md   text-[#80479e] fa-language"></i>
+            <span class="font-bold">Languages</span>
+        </div>
+        <div id="card" class="border-2 rounded-md w-56 py-3 px-5 space-x-2">
+            <i class="fa-solid p-3 bg-[#bbf191] rounded-md   text-[#367604] fa-flask"></i>
+            <span class="font-bold">Science</span>
+        </div>
+       </div>
+       <div id="cards-two" class="flex flex-wrap justify-center items-centers gap-4 mt-4">
+        <div id="card" class="border-2 rounded-md w-56 py-3 px-5 space-x-2">
+            <i class="fa-solid p-3 bg-[#ffe6d1] rounded-md   text-[#f95b00] fa-book"></i>
+            <span class="font-bold">History</span>
+        </div>
+        <div id="card" class="border-2 rounded-md w-56 py-3 px-5 space-x-2">
+            <i class="fa-solid p-3 bg-[#b2fffc] rounded-md   text-[#43a09d] fa-person"></i>
+            <span class="font-bold">Psycology</span>
+        </div>
+        <div id="card" class="border-2 rounded-md w-56 py-3 px-5 space-x-2">
+            <i class="fa-solid p-3 bg-[#fff390] rounded-md   text-[#a67a07] fa-pager"></i>
+            <span class="font-bold">Web Design</span>
+        </div>
+        <div id="card" class="border-2 rounded-md w-56 py-3 px-5 space-x-2">
+            <i class="fa-solid p-3 bg-[#e7e7e7] rounded-md   text-[#7b7b7b] fa-circle-chevron-right"></i>
+            <span class="font-bold">See all</span>
+        </div>
+       </div>
+  </div>
+
+
+  <!-- TESTIMONIAL SECTION -->
+   <div id="testimonial" class="bg-white  pt-14 pb-20 relative overflow-hidden">
+    <div class="py-5 pt-10">
+        <h1 class="text-sm font-extrabold text-red text-center">OUR TESTIMONIALS</h1>
+        <h1 class="text-center px-6 text-3xl font-semibold py-2 tracking-tighter">What Our Students Say About Us</h1>
+       </div>
+    <div class="flex justify-center items-center">
+        <div id="card" class="flex w-96  flex-col gap-3 pb-10">
+            <div id="images" class="flex items-center justify-center gap-6">
+                <img src="images/r1.jpg" class="w-12 rounded-full h-12 object-cover" alt="">
+                <img src="images/r3.jpg" class="w-12 rounded-full h-12 object-cover ring-4 ring-blue" alt="">
+                <img src="images/r2.jpg" class="w-12 rounded-full h-12 object-cover" alt="">
+            </div>
+            <div class="flex items-center justify-center flex-col text-sm">
+                <h1 class="tracking-tight font-semibold">Albert Jack</h1>
+                <h1 class="tracking-tight text-gray-900  ">Student at college</h1>
+                <h1 class="tracking-tight text-gray-900 " >5 star</h1>
+            </div>
+            <div>
+                <p class="text-sm font-medium text-center px-4 relative ">As a student of this online education website. I can confidently say that it has been an incredible experience. The platform is user-friendly and the courses are well structured, making it easy for me to learn at my own pace.<span class="absolute top-11 text-[7rem] left-0 opacity-20">“</span><span class="absolute -bottom-4 text-[7rem] right-0 opacity-20">”</span></p>
+            </div>
+           </div>
+    </div>
+
+       <!-- absoulute images -->
+        <img src="images/b_left.png"  class="absolute top-0 left-0" alt="">
+        <img src="images/b_right.png" class="absolute w-14 bottom-0 right-0  pb-10" alt="">
+        <div class="w-20 h-20 rounded-full bg-[#AFF4FF] absolute top-0 -right-8"></div>
+        <div class="w-28 h-28 rounded-full bg-yellow absolute -bottom-10  z-10 -left-4"></div>   
+
+
+        <div class="bg-blue w-full h-5 absolute bottom-0"></div>
+
+
+   </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

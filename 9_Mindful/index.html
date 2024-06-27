@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mindful - Mental Health Consulting</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- HEADER SECTION STARTS HERE -->
+    <!-- NAVBAR -->
+    <header>
+      <nav
+        class="fixed top-0 z-50 flex items-center justify-between w-full px-4 py-5 shadow-md md:shadow-none md:px-8 lg:px-24 bg-darkGreen"
+      >
+        <div id="logo">
+          <a href="#" class="flex items-center gap-1"
+            ><i class="text-3xl fa-solid fa-spa text-lightGreen"></i
+            ><span class="text-2xl font-semibold tracking-wide text-white"
+              >Mindful</span
+            ></a
+          >
+        </div>
+        <div id="links" class="hidden md:block">
+          <ul
+            class="flex px-10 py-4 text-xs text-gray-200 rounded-full lg:px-9 lg:gap-6 md:gap-2 bg-gray-50 bg-opacity-10"
+          >
+            <li class="duration-100 hover:text-white">
+              <a href="#">Services</a>
+            </li>
+            <li class="duration-100 hover:text-white">
+              <a href="#">Case Studies</a>
+            </li>
+            <li class="duration-100 hover:text-white">
+              <a href="#">Testimonials</a>
+            </li>
+            <li class="duration-100 hover:text-white"><a href="#">Team</a></li>
+            <li class="duration5duration-1000 hover:text-white">
+              <a href="#">Blogs</a>
+            </li>
+            <li class="duration-100 hover:text-white"><a href="#">About</a></li>
+          </ul>
+        </div>
+        <div id="contactus" class="hidden md:block">
+          <button
+            class="px-5 py-1.5 font-light border rounded-full text-lightGreen border-lightGreen group"
+          >
+            <a href="#" class="space-x-2"
+              ><span class="">CONTACT US</span
+              ><i
+                class="transition duration-300 group-hover:translate-x-1 fa-solid fa-arrow-right"
+              ></i
+            ></a>
+          </button>
+        </div>
+        <div id="toggler" class="md:hidden">
+          <i
+            id="bars"
+            class="flex items-center justify-center w-10 py-1 text-xl border border-gray-300 rounded-md cursor-pointer text-lightGreen fa-solid fa-bars-staggered"
+          ></i>
+        </div>
+      </nav>
+      <div id="mobileMenu" class="">
+        <div
+          id="mainMenu"
+          class="fixed z-40 -translate-x-[100%] transition-transform ease-in-out duration-500 w-[80%] h-screen text-white bg-darkGreen navfull:w-full top-16 md:hidden"
+        >
+          <ul class="flex flex-col items-center justify-center space-y-2 pt-14">
+            <li
+              class="px-6 py-2 font-medium transition duration-200 rounded-md hover:bg-opacity-50 hover:bg-gray-200"
+            >
+              <a href="/">Services</a>
+            </li>
+            <li
+              class="px-6 py-2 font-medium transition duration-200 rounded-md hover:bg-opacity-50 hover:bg-gray-200"
+            >
+              <a href="#">Case Studies</a>
+            </li>
+            <li
+              class="px-6 py-2 font-medium transition duration-200 rounded-md hover:bg-opacity-50 hover:bg-gray-200"
+            >
+              <a href="#">Testimonials</a>
+            </li>
+            <li
+              class="px-6 py-2 font-medium transition duration-200 rounded-md hover:bg-opacity-50 hover:bg-gray-200"
+            >
+              <a href="#">Team</a>
+            </li>
+            <li
+              class="px-6 py-2 font-medium transition duration-200 rounded-md hover:bg-opacity-50 hover:bg-gray-200"
+            >
+              <a href="#">Blogs</a>
+            </li>
+            <li
+              class="px-6 py-2 font-medium transition duration-200 rounded-md hover:bg-opacity-50 hover:bg-gray-200"
+            >
+              <a href="#">About</a>
+            </li>
+            <li class="pt-6">
+              <button
+                class="px-5 py-1.5 font-medium border rounded-full text-lightGreen border-lightGreen group"
+              >
+                <a href="#" class="space-x-2"
+                  ><span class="">CONTACT US</span
+                  ><i
+                    class="transition duration-300 group-hover:translate-x-1 fa-solid fa-arrow-right"
+                  ></i
+                ></a>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- TOP HERO SECTION-->
+    <div
+      id="topHero"
+      class="relative flex flex-col w-full pt-32 pb-16 text-white lg:pt-32 md:pt-32 md:py-20 md:flex-row lg:px-16 bg-darkGreen"
+    >
+      <div id="rightSide" class="z-20 flex flex-col gap-1 pl-8 md:w-[70%]">
+        <h1 class="text-4xl font-medium lg:text-5xl">Embrace Your</h1>
+        <h1 class="text-6xl font-bold tracking-wide lg:text-7xl">Mental</h1>
+        <h2 class="text-6xl font-bold tracking-wide lg:text-7xl">Health</h2>
+        <button
+          class="px-5 py-2.5 my-5 text-sm font-semibold w-fit text-black rounded-full bg-lightGreen border-lightGreen group"
+        >
+          <a href="#" class="space-x-2"
+            ><span class="">BOOK AN APPOINTMENT</span
+            ><i
+              class="transition duration-300 group-hover:translate-x-1 fa-solid fa-arrow-right"
+            ></i
+          ></a>
+        </button>
+        <div class="flex items-center gap-3 py-2 md:py-3">
+          <div class="flex items-center">
+            <img src="Images/trustpilot.webp" class="inline w-7" alt="" /><span
+              >Trustpilot</span
+            >
+          </div>
+          <div class="w-[0.5px] h-5 bg-white"></div>
+          <div class="">
+            <i class="fa-star fa-solid text-[#e6be28]"></i>
+            <span>4.8</span>
+          </div>
+        </div>
+      </div>
+      <img
+        src="Images/lily.png"
+        class="lily absolute bottom-0 lilycen:left-44 lilycen2:left-48 lilycen3:left-56 lilycen2:w-[27rem] lg:w-[28rem] left-40 lg:left-80 w-[26rem] xl:left-96 xl:w-[29rem]"
+        alt="lily"
+      />
+      <div id="belowOnmobileOnly" class="md:hidden">
+        <div class="flex px-5 py-3 pt-5">
+          <span
+            class="px-5 py-2.5 font-light text-white w-fit rounded-full bg-none border border-white text-xs group -rotate-[16deg]"
+            ><a href="#" class="space-x-2"
+              ><span class="">Family Counselling</span></a
+            ></span
+          >
+          <span
+            class="px-5 py-2.5 font-light text-white w-fit rounded-full bg-none -rotate-[16deg] border border-white text-xs group"
+            ><a href="#" class=""
+              ><span class="">Individual Therapy</span></a
+            ></span
+          >
+          <span
+            class="px-5 py-2.5 font-light text-white w-fit rounded-full bg-none -rotate-[16deg] border border-white text-xs group"
+            ><a href="#" class="space-x-2"
+              ><span class="">Cororate Counselling</span></a
+            ></span
+          >
+        </div>
+      </div>
+
+      <div id="leftSide" class="hidden md:block w-[30%] mr-8">
+        <div class="">
+          <p class="w-64 font-light lg:w-72 lg:text-lg">
+            We Understand the Challanges You Face.That is Why Wu Put People
+            First in Everything.
+          </p>
+          <button class="pt-3 group text-lightGreen">
+            <a href="#" class="space-x-2"
+              ><span class="">ALL SERVICES</span
+              ><i
+                class="transition duration-300 fa-solid fa-arrow-right group-hover:translate-x-1"
+              ></i
+            ></a>
+          </button>
+        </div>
+      </div>
+      <div class="absolute scale-90 lg:right-52 bottom-4 lg:scale-95 right-24">
+        <div id="belowOnmobileOnly" class="hidden md:block">
+          <div class="flex flex-col px-5 py-3 pt-5 space-y-10">
+            <span
+              class="px-5 py-2.5 font-light text-white w-fit rounded-full bg-none border border-white text-xs group -rotate-[16deg]"
+              ><a href="#" class="space-x-2"
+                ><span class="">Family Counselling</span></a
+              ></span
+            >
+            <span
+              class="px-5 py-2.5 font-light text-white w-fit rounded-full bg-none rotate-[18deg] border border-white text-xs group"
+              ><a href="#" class=""
+                ><span class="">Individual Therapy</span></a
+              ></span
+            >
+            <span
+              class="px-5 py-2.5 font-light text-white w-fit rounded-full bg-none -rotate-[10deg] border border-white text-xs group"
+              ><a href="#" class="space-x-2"
+                ><span class="">Cororate Counselling</span></a
+              ></span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BRANDS SLIDER  -->
+    <div class="relative flex w-full opacity-90">
+      <div
+        class="flex items-center justify-center w-full gap-5 logos logos-slide"
+      >
+        <img src="Images/logos/3m.svg" class="h-12 mx-8 my-8" />
+        <img src="Images/logos/barstool-store.svg" class="h-12 mx-8 my-8" />
+        <img src="Images/logos/budweiser.svg" class="h-12 mx-8 my-8 brand" />
+        <img
+          src="Images/logos/buzzfeed.svg"
+          class="hidden h-10 mx-8 my-8 lg:block"
+        />
+        <img
+          src="Images/logos/forbes.svg"
+          class="hidden h-12 mx-8 my-8 xl:block"
+        />
+      </div>
+    </div>
+
+    <!-- AREA OF EXPERTISE -->
+    <div id="aoe">
+      <h1 class="pb-2 text-4xl font-bold text-center lg:pb-4 md:text-5xl pt-14">
+        Area of Expertise
+      </h1>
+      <div id="row1" class="mt-6">
+        <div
+          id="cards"
+          class="flex flex-wrap items-center justify-center gap-4 lg:gap-6"
+        >
+          <div
+            id="card"
+            class="relative flex items-center justify-center px-24 py-10 overflow-hidden border rounded-2xl border-darkGreen w-72 bg-lightGreen hover:shadow-lg hover:cursor-pointer"
+          >
+            <!-- Card content -->
+            <span class="z-10 text-2xl font-semibold"
+              ><a href="#">Trauma</a></span
+            >
+
+            <!-- Image overlay -->
+            <img
+              src="Images/shadows/1.jpg"
+              alt="Image Overlay"
+              class="absolute inset-0 object-cover w-full h-full transition-opacity duration-200 ease-linear opacity-0 hover:opacity-30"
+            />
+          </div>
+          <div
+            id="card"
+            class="relative flex items-center justify-center px-24 py-10 overflow-hidden border rounded-2xl border-darkGreen w-72 bg-lightGreen hover:shadow-lg hover:cursor-pointer"
+          >
+            <!-- Card content -->
+            <span class="z-10 text-2xl font-semibold"
+              ><a href="#">Anxiety</a></span
+            >
+
+            <!-- Image overlay -->
+            <img
+              src="Images/shadows/2.jpg"
+              alt="Image Overlay"
+              class="absolute inset-0 object-cover w-full h-full transition-opacity duration-200 ease-linear opacity-0 hover:opacity-30"
+            />
+          </div>
+          <div
+            id="card"
+            class="relative flex items-center justify-center px-24 py-10 overflow-hidden border rounded-2xl border-darkGreen w-72 bg-lightGreen hover:shadow-lg hover:cursor-pointer"
+          >
+            <!-- Card content -->
+            <span class="z-10 text-2xl font-semibold"
+              ><a href="#">Depression</a></span
+            >
+
+            <!-- Image overlay -->
+            <img
+              src="Images/shadows/3.jpg"
+              alt="Image Overlay"
+              class="absolute inset-0 object-cover w-full h-full transition-opacity duration-200 ease-linear opacity-0 hover:opacity-30"
+            />
+          </div>
+        </div>
+      </div>
+      <div id="row2" class="mt-4">
+        <div
+          id="cards"
+          class="flex flex-wrap items-center justify-center gap-4 lg:gap-6"
+        >
+          <div
+            id="card"
+            class="relative flex items-center justify-center py-10 overflow-hidden border rounded-2xl border-darkGreen w-72 bg-lightGreen hover:shadow-lg hover:cursor-pointer"
+          >
+            <!-- Card content -->
+            <span class="z-10 text-2xl font-semibold"
+              ><a href="#">Autism</a></span
+            >
+
+            <!-- Image overlay -->
+            <img
+              src="Images/shadows/4.jpg"
+              alt="Image Overlay"
+              class="absolute inset-0 object-cover w-full h-full transition-opacity duration-200 ease-linear opacity-0 hover:opacity-30"
+            />
+          </div>
+          <div
+            id="card"
+            class="relative flex items-center justify-center py-10 overflow-hidden border rounded-2xl border-darkGreen w-72 bg-lightGreen hover:shadow-lg hover:cursor-pointer"
+          >
+            <!-- Card content -->
+            <span class="z-10 text-2xl font-semibold"
+              ><a href="#">Life Transition</a></span
+            >
+
+            <!-- Image overlay -->
+            <img
+              src="Images/shadows/5.jpg"
+              alt="Image Overlay"
+              class="absolute inset-0 object-cover w-full h-full transition-opacity duration-200 ease-linear opacity-0 hover:opacity-30"
+            />
+          </div>
+          <div
+            id="card"
+            class="relative flex items-center justify-center py-10 overflow-hidden border rounded-2xl border-darkGreen w-72 bg-lightGreen hover:shadow-lg hover:cursor-pointer"
+          >
+            <!-- Card content -->
+            <span class="z-10 text-2xl font-semibold"
+              ><a href="#">Grief & Loss</a></span
+            >
+
+            <!-- Image overlay -->
+            <img
+              src="Images/shadows/6.jpg"
+              alt="Image Overlay"
+              class="absolute inset-0 object-cover w-full h-full transition-opacity duration-200 ease-linear opacity-0 hover:opacity-30"
+            />
+          </div>
+        </div>
+      </div>
+      <div id="row3" class="mt-4">
+        <div
+          id="cards"
+          class="flex flex-wrap items-center justify-center gap-4 lg:gap-6"
+        >
+          <div
+            id="card"
+            class="relative flex items-center justify-center py-10 overflow-hidden border rounded-2xl border-darkGreen w-72 bg-lightGreen hover:shadow-lg hover:cursor-pointer"
+          >
+            <!-- Card content -->
+            <span class="z-10 text-2xl font-semibold"
+              ><a href="#">Parenting</a></span
+            >
+
+            <!-- Image overlay -->
+            <img
+              src="Images/shadows/7.jpg"
+              alt="Image Overlay"
+              class="absolute inset-0 object-cover w-full h-full transition-opacity duration-200 ease-linear opacity-0 hover:opacity-30"
+            />
+          </div>
+          <div
+            id="card"
+            class="relative flex items-center justify-center py-10 overflow-hidden border rounded-2xl border-darkGreen w-72 bg-lightGreen hover:shadow-lg hover:cursor-pointer"
+          >
+            <!-- Card content -->
+            <span class="z-10 text-2xl font-semibold"><a href="#">OCD</a></span>
+
+            <!-- Image overlay -->
+            <img
+              src="Images/shadows/8.jpg"
+              alt="Image Overlay"
+              class="absolute inset-0 object-cover w-full h-full transition-opacity duration-200 ease-linear opacity-0 hover:opacity-30"
+            />
+          </div>
+          <div
+            id="card"
+            class="relative flex items-center justify-center py-10 overflow-hidden border rounded-2xl border-darkGreen w-72 bg-lightGreen hover:shadow-lg hover:cursor-pointer"
+          >
+            <!-- Card content -->
+            <span class="z-10 text-2xl font-semibold"
+              ><a href="#">ADHD</a></span
+            >
+
+            <!-- Image overlay -->
+            <img
+              src="Images/shadows/9.jpg"
+              alt="Image Overlay"
+              class="absolute inset-0 object-cover w-full h-full transition-opacity duration-200 ease-linear opacity-0 hover:opacity-30"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CASE STUDIES -->
+    <div id="caseStudies" class="pb-20 mt-14 bg-darkGreen">
+      <div
+        id="head"
+        class="flex items-center justify-between px-10 py-5 pt-12 lg:px-14"
+      >
+        <h1 class="text-4xl font-bold text-white md:text-5xl">Case Studies</h1>
+        <div>
+          <button
+            class="px-5 py-1.5 font-light border rounded-full text-lightGreen border-lightGreen group"
+          >
+            <a href="#" class="space-x-2"
+              ><span class="">VIEW ALL</span
+              ><i
+                class="transition duration-300 group-hover:translate-x-1 fa-solid fa-arrow-right"
+              ></i
+            ></a>
+          </button>
+        </div>
+      </div>
+      <div id="row">
+        <div
+          id="cards"
+          class="flex flex-wrap items-center justify-center gap-10 px-4 mt-8"
+        >
+          <div id="card" class="relative w-96 h-96">
+            <img
+              src="Images/1.jpg"
+              class="object-cover w-full h-full rounded-2xl"
+            />
+            <div
+              class="bg-[#486c65] -bottom-2 flex rounded-3xl px-3 py-3 absolute"
+            >
+              <h1 class="pr-5 font-medium text-white md:text-lg">
+                Perinatal Mental Health Advice in Hywel Dda
+              </h1>
+              <div
+                class="px-8 py-2.5 flex items-center justify-center bg-lightGreen rounded-full"
+              >
+                <i
+                  class="-rotate-[35deg] fa-solid fa-arrow-right text-darkGreen"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div id="card" class="relative w-96 h-96">
+            <img
+              src="Images/2.jpg"
+              class="object-cover w-full h-full rounded-2xl"
+            />
+            <div
+              class="bg-[#486c65] -bottom-2 flex rounded-3xl px-3 py-3 absolute"
+            >
+              <h1 class="pr-5 font-medium text-white md:text-lg">
+                Health Mental Advice in Greater Glasgow and Clyde
+              </h1>
+              <div
+                class="px-8 py-2.5 flex items-center justify-center bg-lightGreen rounded-full"
+              >
+                <i
+                  class="-rotate-[35deg] fa-solid fa-arrow-right text-darkGreen"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div id="card" class="relative w-96 h-96">
+            <img
+              src="Images/3.jpg"
+              class="object-cover w-full h-full rounded-2xl"
+            />
+            <div
+              class="bg-[#486c65] -bottom-2 flex rounded-3xl px-3 py-3 absolute"
+            >
+              <h1 class="pr-2 font-medium text-white md:text-lg">
+                5 Minutes With Old Age Consultant & Clinical Director
+              </h1>
+              <div
+                class="px-8 py-2.5 flex items-center justify-center bg-lightGreen rounded-full"
+              >
+                <i
+                  class="-rotate-[35deg] fa-solid fa-arrow-right text-darkGreen"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TESTIMONIAL SECTION -->
+    <div id="testimonail" class="bg-[#f6f6f6]">
+      <div id="maindiv" class="flex flex-col pb-20 lg:flex-row py-14 lg:px-2">
+        <div id="text" class="lg:w-[30%]">
+          <h1
+            class="px-12 py-8 text-4xl font-bold text-center text-black lg:text-start md:text-5xl"
+          >
+            Love We Got From Our Clients
+          </h1>
+        </div>
+        <div id="reviewText" class="lg:w-[70%]">
+          <div class="swiper testimonial swiperr2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div
+                  id="card1"
+                  class="flex flex-col gap-10 md:gap-3 md:px-2 lg:gap-0 md:flex-row"
+                >
+                  <div id="part1" class="mx-auto space-y-2 w-96">
+                    <div class="text-[#eec222]">
+                      <i class="fa-star fa-solid"></i>
+                      <i class="fa-star fa-solid"></i>
+                      <i class="fa-star fa-solid"></i>
+                      <i class="fa-star fa-solid"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h1 class="text-xl font-semibold">Best Service Ever!</h1>
+                    <p class="text-sm text-gray-700 capitalize">
+                      One of the best place where you can open-up about your
+                      things.you can easilyrely on them.thank you guys for your
+                      wonderful service!
+                    </p>
+                    <div id="buttons">
+                      <button
+                        class="px-5 py-1.5 font-medium text-sm border rounded-full text-gray-800 border-gray-800"
+                      >
+                        <a href="#" class="space-x-2"
+                          ><span class="">Depression</span></a
+                        >
+                      </button>
+                      <button
+                        class="px-5 py-1.5 font-medium text-sm border rounded-full text-gray-800 border-gray-800"
+                      >
+                        <a href="#" class="space-x-2"
+                          ><span class="">Life Transitions</span></a
+                        >
+                      </button>
+                    </div>
+                    <div id="iamge" class="relative h-36">
+                      <img
+                        src="Images/r1.jpg"
+                        class="object-cover w-full h-full rounded-2xl"
+                      />
+                      <span
+                        class="absolute flex items-center justify-center py-4 rounded-full px-7 bottom-2 right-4 bg-darkGreen"
+                      >
+                        <i class="fa-solid fa-play text-lightGreen"></i>
+                      </span>
+                    </div>
+                  </div>
+                  <div id="part2" class="mx-auto space-y-2 w-96">
+                    <div id="iamge" class="relative h-36">
+                      <img
+                        src="Images/r2.jpg"
+                        class="object-cover w-full h-full rounded-2xl"
+                      />
+                      <span
+                        class="absolute flex items-center justify-center py-4 rounded-full px-7 bottom-2 right-4 bg-darkGreen"
+                      >
+                        <i class="fa-solid fa-play text-lightGreen"></i>
+                      </span>
+                    </div>
+                    <div class="text-[#eec222]">
+                      <i class="fa-star fa-solid"></i>
+                      <i class="fa-star fa-solid"></i>
+                      <i class="fa-star fa-solid"></i>
+                      <i class="fa-star fa-solid"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h1 class="text-xl font-semibold">
+                      Well-mannered Doctors!
+                    </h1>
+                    <p class="text-sm text-gray-700 capitalize">
+                      the doctors know how to treat you in you in
+                      wrost.connecting them is valuable. i am litreally having
+                      good expereince with you guys!
+                    </p>
+                    <div id="buttons">
+                      <button
+                        class="px-5 py-1.5 font-medium text-sm border rounded-full text-gray-800 border-gray-800"
+                      >
+                        <a href="#" class="space-x-2"
+                          ><span class="">Depression</span></a
+                        >
+                      </button>
+                      <button
+                        class="px-5 py-1.5 font-medium text-sm border rounded-full text-gray-800 border-gray-800"
+                      >
+                        <a href="#" class="space-x-2"
+                          ><span class="">Trauma</span></a
+                        >
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  id="card2"
+                  class="flex flex-col gap-10 md:gap-3 md:px-2 lg:gap-0 md:flex-row"
+                >
+                  <div id="part1" class="mx-auto space-y-2 w-96">
+                    <div class="text-[#eec222]">
+                      <i class="fa-star fa-solid"></i>
+                      <i class="fa-star fa-solid"></i>
+                      <i class="fa-star fa-solid"></i>
+                      <i class="fa-star fa-solid"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h1 class="text-xl font-semibold">Best Service Ever!</h1>
+                    <p class="text-sm text-gray-700 capitalize">
+                      One of the best place where you can open-up about your
+                      things.you can easilyrely on them.thank you guys for your
+                      wonderful service!
+                    </p>
+                    <div id="buttons">
+                      <button
+                        class="px-5 py-1.5 font-medium text-sm border rounded-full text-gray-800 border-gray-800"
+                      >
+                        <a href="#" class="space-x-2"
+                          ><span class="">Depression</span></a
+                        >
+                      </button>
+                      <button
+                        class="px-5 py-1.5 font-medium text-sm border rounded-full text-gray-800 border-gray-800"
+                      >
+                        <a href="#" class="space-x-2"
+                          ><span class="">Life Transitions</span></a
+                        >
+                      </button>
+                    </div>
+                    <div id="iamge" class="relative h-36">
+                      <img
+                        src="Images/r3.jpg"
+                        class="object-cover w-full h-full rounded-2xl"
+                      />
+                      <span
+                        class="absolute flex items-center justify-center py-4 rounded-full px-7 bottom-2 right-4 bg-darkGreen"
+                      >
+                        <i class="fa-solid fa-play text-lightGreen"></i>
+                      </span>
+                    </div>
+                  </div>
+                  <div id="part2" class="mx-auto space-y-2 w-96">
+                    <div id="iamge" class="relative h-36">
+                      <img
+                        src="Images/r4.jpg"
+                        class="object-cover w-full h-full rounded-2xl"
+                      />
+                      <span
+                        class="absolute flex items-center justify-center py-4 rounded-full px-7 bottom-2 right-4 bg-darkGreen"
+                      >
+                        <i class="fa-solid fa-play text-lightGreen"></i>
+                      </span>
+                    </div>
+                    <div class="text-[#eec222]">
+                      <i class="fa-star fa-solid"></i>
+                      <i class="fa-star fa-solid"></i>
+                      <i class="fa-star fa-solid"></i>
+                      <i class="fa-star fa-solid"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h1 class="text-xl font-semibold">
+                      Well-mannered Doctors!
+                    </h1>
+                    <p class="text-sm text-gray-700 capitalize">
+                      the doctors know how to treat you in you in
+                      wrost.connecting them is valuable. i am litreally having
+                      good expereince with you guys!
+                    </p>
+                    <div id="buttons">
+                      <button
+                        class="px-5 py-1.5 font-medium text-sm border rounded-full text-gray-800 border-gray-800"
+                      >
+                        <a href="#" class="space-x-2"
+                          ><span class="">Depression</span></a
+                        >
+                      </button>
+                      <button
+                        class="px-5 py-1.5 font-medium text-sm border rounded-full text-gray-800 border-gray-800"
+                      >
+                        <a href="#" class="space-x-2"
+                          ><span class="">Trauma</span></a
+                        >
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  id="card3"
+                  class="flex flex-col gap-10 md:gap-3 md:px-2 lg:gap-0 md:flex-row"
+                >
+                  <div id="part1" class="mx-auto space-y-2 w-96">
+                    <div class="text-[#eec222]">
+                      <i class="fa-star fa-solid"></i>
+                      <i class="fa-star fa-solid"></i>
+                      <i class="fa-star fa-solid"></i>
+                      <i class="fa-star fa-solid"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h1 class="text-xl font-semibold">Best Service Ever!</h1>
+                    <p class="text-sm text-gray-700 capitalize">
+                      One of the best place where you can open-up about your
+                      things.you can easilyrely on them.thank you guys for your
+                      wonderful service!
+                    </p>
+                    <div id="buttons">
+                      <button
+                        class="px-5 py-1.5 font-medium text-sm border rounded-full text-gray-800 border-gray-800"
+                      >
+                        <a href="#" class="space-x-2"
+                          ><span class="">Depression</span></a
+                        >
+                      </button>
+                      <button
+                        class="px-5 py-1.5 font-medium text-sm border rounded-full text-gray-800 border-gray-800"
+                      >
+                        <a href="#" class="space-x-2"
+                          ><span class="">Life Transitions</span></a
+                        >
+                      </button>
+                    </div>
+                    <div id="iamge" class="relative h-36">
+                      <img
+                        src="Images/r5.jpg"
+                        class="object-cover w-full h-full rounded-2xl"
+                      />
+                      <span
+                        class="absolute flex items-center justify-center py-4 rounded-full px-7 bottom-2 right-4 bg-darkGreen"
+                      >
+                        <i class="fa-solid fa-play text-lightGreen"></i>
+                      </span>
+                    </div>
+                  </div>
+                  <div id="part2" class="mx-auto space-y-2 w-96">
+                    <div id="iamge" class="relative h-36">
+                      <img
+                        src="Images/r2.jpg"
+                        class="object-cover w-full h-full rounded-2xl"
+                      />
+                      <span
+                        class="absolute flex items-center justify-center py-4 rounded-full px-7 bottom-2 right-4 bg-darkGreen"
+                      >
+                        <i class="fa-solid fa-play text-lightGreen"></i>
+                      </span>
+                    </div>
+                    <div class="text-[#eec222]">
+                      <i class="fa-star fa-solid"></i>
+                      <i class="fa-star fa-solid"></i>
+                      <i class="fa-star fa-solid"></i>
+                      <i class="fa-star fa-solid"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h1 class="text-xl font-semibold">
+                      Well-mannered Doctors!
+                    </h1>
+                    <p class="text-sm text-gray-700 capitalize">
+                      the doctors know how to treat you in you in
+                      wrost.connecting them is valuable. i am litreally having
+                      good expereince with you guys!
+                    </p>
+                    <div id="buttons">
+                      <button
+                        class="px-5 py-1.5 font-medium text-sm border rounded-full text-gray-800 border-gray-800"
+                      >
+                        <a href="#" class="space-x-2"
+                          ><span class="">Depression</span></a
+                        >
+                      </button>
+                      <button
+                        class="px-5 py-1.5 font-medium text-sm border rounded-full text-gray-800 border-gray-800"
+                      >
+                        <a href="#" class="space-x-2"
+                          ><span class="">Trauma</span></a
+                        >
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DOCTOR TEAM -->
+    <div id="doctors" class="py-10 bg-lightGreen">
+        <div
+        id="head"
+        class="flex flex-col items-center justify-between px-10 py-5 pt-12 md:flex-row lg:px-14"
+      >
+        <h1 class="text-4xl font-bold text-black md:text-5xl">Get Treatment From Our Specialist</h1>
+        <div class="w-full mt-3 md:w-fit md:mt-0">
+          <button
+            class="px-5 py-1.5 font-light border rounded-full text-lightGreen border-darkGreen bg-darkGreen group"
+          >
+            <a href="#" class="space-x-2"
+              ><span class="">BOOK AN APPOINTMENT</span
+              ><i
+                class="transition duration-300 group-hover:translate-x-1 fa-solid fa-arrow-right"
+              ></i
+            ></a>
+          </button>
+        </div>
+      </div>
+      <div id="cards" class="flex flex-wrap items-center justify-center gap-10 px-4 mt-8">
+        <div id="card" class="relative overflow-hidden rounded-2xl w-72 h-96 bg-darkGreen">
+            <img src="Images/d1.png" class="absolute object-cover scale-75 -bottom-24 ">
+            <div class="absolute bottom-0 py-2 text-white left-4">
+                <h1 class="font-medium">Dr. Rachel Porter</h1>
+                <h2 class="text-sm">Experience | 10 Years</h2>
+            </div>
+        </div>
+        <div id="card" class="relative overflow-hidden rounded-2xl w-72 h-96 bg-darkGreen">
+            <img src="Images/d2.png" class="absolute bottom-0 object-cover right-4">
+            <div class="absolute bottom-0 py-2 text-white left-4">
+                <h1 class="font-medium">Dr. Roy Lawson</h1>
+                <h2 class="text-sm">Experience | 8 Years</h2>
+            </div>
+        </div>
+        <div id="card" class="relative overflow-hidden rounded-2xl w-72 h-96 bg-darkGreen">
+            <img src="Images/d3.png" class="absolute object-cover scale-150 bottom-12 right-4">
+            <div class="absolute bottom-0 py-2 text-white left-4">
+                <h1 class="font-medium">Dr. Dorothy Jordan</h1>
+                <h2 class="text-sm">Experience | 5 Years</h2>
+            </div>
+        </div>
+        <div id="card" class="relative overflow-hidden rounded-2xl w-72 h-96 bg-darkGreen">
+            <img src="Images/d4.png" class="absolute object-cover scale-150 bottom-12 right-6">
+            <div class="absolute bottom-0 py-2 text-white left-4">
+                <h1 class="font-medium">Dr. Jane Freeman</h1>
+                <h2 class="text-sm">Experience | 4 Years</h2>
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- TRAIN YOUR MIND WITH US -->
+     <div id="trainYourMind">
+        <div
+        id="head"
+        class="flex flex-col items-center justify-between px-10 py-8 pt-20 md:flex-row lg:px-14"
+      >
+        <h1 class="text-4xl font-bold text-black capitalize md:text-5xl">Train your mind with us</h1>
+        <div class="mt-3 space-x-2 md:mt-0">
+          <button
+            class="px-3 py-1.5 font-light border rounded-full text-darkGreen border-darkGreen group"
+          >
+            <a href="#" class="space-x-2"
+              >
+              <i
+                class="transition duration-300 group-hover:-translate-x-1 fa-solid fa-arrow-left"
+              ></i
+            ></a>
+          </button>
+          <button
+            class="px-3 py-1.5 font-light border rounded-full text-darkGreen border-darkGreen group"
+          >
+            <a href="#" class="space-x-2"
+              >
+              <i
+                class="transition duration-300 group-hover:translate-x-1 fa-solid fa-arrow-right"
+              ></i
+            ></a>
+          </button>
+        </div>
+      </div>
+      <div id="row">
+        <div
+          id="cards"
+          class="flex flex-wrap items-center justify-center gap-10 px-4 mt-8"
+        >
+        <div id="card" class="relative w-96 h-96">
+            <img
+              src="Images/b1.jpg"
+              class="object-cover w-full h-full rounded-2xl"
+            />
+            <div
+              class="absolute flex px-3 py-3 scale-95 bg-lightGreen bottom-1 rounded-3xl"
+            >
+              <h1 class="font-semibold text-gray-800 capitalize md:text-lg">
+               Opioid overdose survivors report having an sucidal motivations
+              </h1>
+              <div
+                class="px-8 py-2.5 flex items-center justify-center bg-darkGreen rounded-full"
+              >
+                <i
+                  class="-rotate-[35deg] fa-solid fa-arrow-right text-lightGreen"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div id="card" class="relative w-96 h-96">
+            <img
+              src="Images/b2.jpg"
+              class="object-cover w-full h-full rounded-2xl"
+            />
+            <div
+              class="absolute flex px-3 py-3 scale-95 bg-lightGreen bottom-1 rounded-3xl"
+            >
+              <h1 class="font-semibold text-gray-800 capitalize md:text-lg">
+                compassionate caregiving born from childhood Experience
+              </h1>
+              <div
+                class="px-8 py-2.5 flex items-center justify-center bg-darkGreen rounded-full"
+              >
+                <i
+                  class="-rotate-[35deg] fa-solid fa-arrow-right text-lightGreen"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div id="card" class="relative w-96 h-96">
+            <img
+              src="Images/b3.jpeg"
+              class="object-cover w-full h-full rounded-2xl"
+            />
+            <div
+              class="absolute flex px-3 py-3 scale-95 bg-lightGreen bottom-1 rounded-3xl"
+            >
+              <h1 class="font-semibold text-gray-800 capitalize md:text-lg">
+                Everything you need to know about Anxiety nowadays
+              </h1>
+              <div
+                class="px-8 py-2.5 flex items-center justify-center bg-darkGreen rounded-full"
+              >
+                <i
+                  class="-rotate-[35deg] fa-solid fa-arrow-right text-lightGreen"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+
+
+     <!-- FOOTER SECTION -->
+      <footer class="py-16 pb-10 mt-12 bg-darkGreen">
+        <div>
+            <div id="text" class="flex flex-col items-center justify-center gap-3">
+                <p class="text-3xl font-bold text-center text-white">Get our latest resources and <br> event invites right in your inbox!</p>
+                <p class="text-sm text-center text-gray-200 capitalize">All of our resources and special invites can be easily <br> accesible by our subscribers anywhere.</p>
+            </div>
+            <div id="emailbox" class="relative flex items-center mx-auto py-7 w-fit">
+                <input type="email" placeholder="Your Email Here" class="py-3 pl-3 text-sm rounded-l-full rounded-r-full outline-none w-96 placeholder:text-sm">
+                <button class="absolute right-0 px-4 py-3 text-sm font-bold text-gray-800 rounded-full bg-lightGreen">SUBSCRIBE NOW</button>
+            </div>
+        </div>
+        <nav
+        class="z-50 flex items-center justify-between w-full px-4 py-5 mt-6 md:px-8 lg:px-32 bg-darkGreen"
+      >
+        <div id="logo">
+          <a href="#" class="flex items-center gap-1"
+            ><i class="text-3xl fa-solid fa-spa text-lightGreen"></i
+            ><span class="text-2xl font-semibold tracking-wide text-white"
+              >Mindful</span
+            ></a
+          >
+        </div>
+        <div id="links" class="hidden md:block">
+          <ul
+            class="flex px-10 py-4 text-xs text-gray-200 rounded-full lg:px-9 lg:gap-6 md:gap-2 "
+          >
+            <li class="duration-100 hover:text-white">
+              <a href="#">Services</a>
+            </li>
+            <li class="duration-100 hover:text-white">
+              <a href="#">Case Studies</a>
+            </li>
+            <li class="duration-100 hover:text-white">
+              <a href="#">Testimonials</a>
+            </li>
+            <li class="duration-100 hover:text-white"><a href="#">Team</a></li>
+            <li class="duration5duration-1000 hover:text-white">
+              <a href="#">Blogs</a>
+            </li>
+            <li class="duration-100 hover:text-white"><a href="#">About</a></li>
+          </ul>
+        </div>
+        <div id="contactus" class="">
+          <a href="#"><i class="px-3.5 py-2 text-xl text-white rounded-full bg-opacity-15 bg-gray-50 fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="px-3 py-2 text-xl text-white rounded-full bg-opacity-15 bg-gray-50 fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="px-3 py-2 text-xl text-white rounded-full bg-opacity-15 bg-gray-50 fa-brands fa-instagram"></i></a>
+        </div>
+      </nav>
+      <p class="mt-6 text-xs text-center text-gray-200 capitalize ">&copy;2024 All right reserved. <a href="#">Privacy policy</a> | <a href="#"> Terms & conditions</a></p>
+      </footer>
+
+     
+
+    <!-- <div class="min-h-[100vh]"></div> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
