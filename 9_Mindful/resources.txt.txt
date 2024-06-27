@@ -1,2 +1,0 @@
-colors: https://coolors.co/image-picker
-font : poppins
