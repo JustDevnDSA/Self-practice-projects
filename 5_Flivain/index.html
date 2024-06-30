@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flivain - flying made easy</title>
+    <link rel="stylesheet" href="output.css" />
+    <!-- fontawesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="font-poppins">
+    <!-- NAVBAR STARTS HERE -->
+    <header>
+      <nav class="w-full">
+        <!-- top -->
+        <div
+          id="top"
+          class="fixed top-0 z-50 flex items-center justify-between w-full px-8 py-2 text-gray-700 md:py-2.5 lg:py-3 md:px-14 lg:px-20 bg-background"
+        >
+          <div
+            id="toggleIcon"
+            class="flex items-center justify-center md:hidden w-9 h-9"
+          >
+            <img id="toggler" src="images/bars.png" class="w-[33px]" alt="" />
+          </div>
+          <div id="menuIcon" class="flex items-center justify-center w-9 h-9">
+            <img
+              id="menuIcon"
+              src="images/menu.png"
+              class="w-[33px] hidden md:block"
+              alt=""
+            />
+          </div>
+          <div id="ctas" class="flex gap-3 text-xs md:text-xs md:gap-6 md:pl-16">
+            <span><a href="#">Support</a></span>
+            <span class="flex items-center gap-1"
+              ><a href="#"
+                ><i class="fa-solid fa-globe"></i><a href="#">Language</a></a
+              ></span
+            >
+          </div>
+          <div
+            id="actions"
+            class="hidden gap-3 text-xs md:flex md:text-sm md:gap-6"
+          >
+            <span><a href="#">Sign In</a></span>
+            <span class="flex items-center gap-1"
+              ><a href="#"><a href="#">Sign Up</a></a></span
+            >
+          </div>
+        </div>
+        <!-- below top -->
+        <div
+          id="mainnav"
+          class="flex z-20 fixed top-12 w-full bg-white items-center justify-between px-8 py-3.5 md:px-14 lg:px-20 lg:py-6 md:py-5"
+        >
+          <div id="logo" class="flex flex-col items-center leading-tight">
+            <h1 class="text-3xl font-bold">Flivain</h1>
+            <h2 class="text-[0.55rem] tracking-tighter text-gray-700">
+              Flight Booking Agency
+            </h2>
+          </div>
+          <div id="links">
+            <ul class="items-center justify-center hidden gap-4 lg:gap-6 md:flex">
+              <li
+                class="flex flex-col items-center justify-center my-1 text-lg font-medium text-gray-700 cursor-pointer md:text-sm group hover:text-black"
+              >
+                <div class="text-center">Home</div>
+                <div
+                  class="flex items-center justify-between transition-all duration-300 ease-in-out w-[50px] scale-0 group-hover:scale-75 mt-1 h-0.5 bg-blue opacity-0 group-hover:opacity-100"
+                >
+                  <div class="w-2 h-2 rounded-full bg-blue"></div>
+                  <div class="w-2 h-2 rounded-full bg-blue"></div>
+                  <div class="w-2 h-2 rounded-full bg-blue"></div>
+                  <div class="w-2 h-2 rounded-full bg-blue"></div>
+                </div>
+              </li>
+              <li
+                class="flex flex-col items-center justify-center my-1 text-lg font-medium text-gray-700 cursor-pointer md:text-sm group hover:text-black"
+              >
+                <div class="text-center">About</div>
+                <div
+                  class="flex items-center justify-between transition-all duration-300 ease-in-out w-[50px] scale-0 group-hover:scale-75 mt-1 h-0.5 bg-blue opacity-0 group-hover:opacity-100"
+                >
+                  <div class="w-2 h-2 rounded-full bg-blue"></div>
+                  <div class="w-2 h-2 rounded-full bg-blue"></div>
+                  <div class="w-2 h-2 rounded-full bg-blue"></div>
+                  <div class="w-2 h-2 rounded-full bg-blue"></div>
+                </div>
+              </li>
+              <li
+                class="flex flex-col items-center justify-center my-1 text-lg font-medium text-gray-700 cursor-pointer md:text-sm group hover:text-black"
+              >
+                <div class="text-center">Offers</div>
+                <div
+                  class="flex items-center justify-between transition-all duration-300 ease-in-out w-[50px] scale-0 group-hover:scale-75 mt-1 h-0.5 bg-blue opacity-0 group-hover:opacity-100"
+                >
+                  <div class="w-2 h-2 rounded-full bg-blue"></div>
+                  <div class="w-2 h-2 rounded-full bg-blue"></div>
+                  <div class="w-2 h-2 rounded-full bg-blue"></div>
+                  <div class="w-2 h-2 rounded-full bg-blue"></div>
+                </div>
+              </li>
+              <li
+                class="flex flex-col items-center justify-center my-1 text-lg font-medium text-gray-700 cursor-pointer md:text-sm group hover:text-black"
+              >
+                <div class="text-center">Seats</div>
+                <div
+                  class="flex items-center justify-between transition-all duration-300 ease-in-out w-[50px] scale-0 group-hover:scale-75 mt-1 h-0.5 bg-blue opacity-0 group-hover:opacity-100"
+                >
+                  <div class="w-2 h-2 rounded-full bg-blue"></div>
+                  <div class="w-2 h-2 rounded-full bg-blue"></div>
+                  <div class="w-2 h-2 rounded-full bg-blue"></div>
+                  <div class="w-2 h-2 rounded-full bg-blue"></div>
+                </div>
+              </li>
+              <li
+                class="flex flex-col items-center justify-center my-1 text-lg font-medium text-gray-700 cursor-pointer md:text-sm group hover:text-black"
+              >
+                <div class="text-center">Destinations</div>
+                <div
+                  class="flex items-center justify-between transition-all duration-300 ease-in-out w-[50px] scale-0 group-hover:scale-75 mt-1 h-0.5 bg-blue opacity-0 group-hover:opacity-100"
+                >
+                  <div class="w-2 h-2 rounded-full bg-blue"></div>
+                  <div class="w-2 h-2 rounded-full bg-blue"></div>
+                  <div class="w-2 h-2 rounded-full bg-blue"></div>
+                  <div class="w-2 h-2 rounded-full bg-blue"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="contactus">
+            <button
+              class="flex items-center py-2.5 text-sm text-white rounded-full hover:bg-opacity-95 px-6 bg-blue"
+            >
+              <a href="#">Contact</a>
+            </button>
+          </div>
+        </div>
+      </nav>
+      <!-- Mobile navbar -->
+      <div
+        id="mobileNav"
+        class="fixed inset-0 w-full md:hidden transition-transform ease-in-out duration-500 -translate-y-[110%] z-40 bg-white h-screen top-[3.25rem]"
+      >
+        <ul class="flex flex-col items-center justify-center gap-4 pt-10">
+          <li
+            class="flex flex-col items-center justify-center my-1 text-lg font-medium text-gray-700 cursor-pointer group hover:text-black"
+          >
+            <div class="text-center">Home</div>
+            <div
+              class="flex items-center justify-between h-0 transition-all duration-300 ease-in-out w-[50px] scale-0 group-hover:scale-75 group-hover:h-0.5 bg-blue"
+            >
+              <div class="w-2 h-2 rounded-full bg-blue"></div>
+              <div class="w-2 h-2 rounded-full bg-blue"></div>
+              <div class="w-2 h-2 rounded-full bg-blue"></div>
+              <div class="w-2 h-2 rounded-full bg-blue"></div>
+            </div>
+          </li>
+          <li
+            class="flex flex-col items-center justify-center my-1 text-lg font-medium text-gray-700 cursor-pointer group hover:text-black"
+          >
+            <div class="text-center">About</div>
+            <div
+              class="flex items-center justify-between h-0 transition-all duration-300 ease-in-out w-[50px] scale-0 group-hover:scale-75 group-hover:h-0.5 bg-blue"
+            >
+              <div class="w-2 h-2 rounded-full bg-blue"></div>
+              <div class="w-2 h-2 rounded-full bg-blue"></div>
+              <div class="w-2 h-2 rounded-full bg-blue"></div>
+              <div class="w-2 h-2 rounded-full bg-blue"></div>
+            </div>
+          </li>
+          <li
+            class="flex flex-col items-center justify-center my-1 text-lg font-medium text-gray-700 cursor-pointer group hover:text-black"
+          >
+            <div class="text-center">Offers</div>
+            <div
+              class="flex items-center justify-between h-0 transition-all duration-300 ease-in-out w-[50px] scale-0 group-hover:scale-75 group-hover:h-0.5 bg-blue"
+            >
+              <div class="w-2 h-2 rounded-full bg-blue"></div>
+              <div class="w-2 h-2 rounded-full bg-blue"></div>
+              <div class="w-2 h-2 rounded-full bg-blue"></div>
+              <div class="w-2 h-2 rounded-full bg-blue"></div>
+            </div>
+          </li>
+          <li
+            class="flex flex-col items-center justify-center my-1 text-lg font-medium text-gray-700 cursor-pointer group hover:text-black"
+          >
+            <div class="text-center">Seats</div>
+            <div
+              class="flex items-center justify-between h-0 transition-all duration-300 ease-in-out w-[50px] scale-0 group-hover:scale-75 group-hover:h-0.5 bg-blue"
+            >
+              <div class="w-2 h-2 rounded-full bg-blue"></div>
+              <div class="w-2 h-2 rounded-full bg-blue"></div>
+              <div class="w-2 h-2 rounded-full bg-blue"></div>
+              <div class="w-2 h-2 rounded-full bg-blue"></div>
+            </div>
+          </li>
+          <li
+            class="flex flex-col items-center justify-center my-1 text-lg font-medium text-gray-700 cursor-pointer group hover:text-black"
+          >
+            <div class="text-center">Destinations</div>
+            <div
+              class="flex items-center justify-between h-0 transition-all duration-300 ease-in-out w-[50px] scale-0 group-hover:scale-75 group-hover:h-0.5 bg-blue"
+            >
+              <div class="w-2 h-2 rounded-full bg-blue"></div>
+              <div class="w-2 h-2 rounded-full bg-blue"></div>
+              <div class="w-2 h-2 rounded-full bg-blue"></div>
+              <div class="w-2 h-2 rounded-full bg-blue"></div>
+            </div>
+          </li>
+          <li class="flex gap-10 text-lg font-medium text-gray-700 mt-14">
+            <span><a href="#">Sign In</a></span>
+            <span><a href="#">Sign Up</a></span>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+<!-- MAIN SECTION STARTS HERE -->
+ <main class="mt-36">
+    <!-- TOP HEREO SECTION -->
+    <section id="topHero">
+        <!-- hero text -->
+        <div id="text" class="px-4 py-6 text-4xl font-semibold tracking-tight text-center md:tracking-normal lg:tracking-wide lg:text-5xl">
+            <h1 class="sm:text-5xl min-[2150px]:text-7xl">Find And Book</h1>
+            <h1 class="">A Great Experience</h1>
+        </div>
+        <!-- hero image -->
+         <div id="skyimage" class="w-[83%] h-48 md:h-[18rem] max-[318px]:h-40 mmd:h-72 lg:h-[22rem] xl:h-[24rem]  2xl:h-[29rem] rounded-r-full rounded-l-full mx-auto relative my-8 shadow-sm min-[2150px]:h-[35rem]">
+            <img src="images/sky.jpg" class="object-cover w-full h-full rounded-l-full rounded-r-full" alt="sky">
+            <img src="images/plane.png" alt="plane" class="absolute scale-125 sm:scale-110 sm:-top-10 -top-4 mmd:-top-20 lg:-top-24 xl:-top-32 lg:scale-110 md:scale-110 xl:scale-100 2xl:-top-44 min-[2450px]:left-16">
+         </div>
+    </section>
+
+    <!-- CHOOSE CLASS OPTION -->
+     <section id="chooseClass" class="px-2 py-8 mx-4 border shadow-lg md:mx-10 rounded-xl">
+        <!-- classes -->
+                <div class="flex justify-center">
+                    <div id="classes" class="flex items-center  text-gray-700 py-1.5 rounded-full bg-background text-sm w-fit ">
+                        <h1 class="py-2 px-7">Economy</h1>
+                        <h1 class="py-2 text-white rounded-full px-7 bg-blue">Business Class</h1>
+                        <h1 class="py-2 px-7">First Class</h1>
+                    </div>
+                </div>
+            <!-- actions -->
+             <div class="flex flex-wrap items-center justify-center gap-3 pt-8 pl-5 md:gap-4 ">
+                    <div id="location" class="flex items-center gap-3 py-5 pl-3 text-lg shadow-custom rounded-xl w-72 ">
+                        <div class="flex items-center justify-center w-10 rounded-full h-11 bg-background ">
+                            <i class="text-xl fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="flex flex-col">
+                            <h1 class="font-semibold">Location</h1>
+                                <span class="text-xs text-gray-700">Where are you going?</span>
+                            </div>
+                    </div>
+                    <div id="person" class="flex items-center gap-3 py-5 pl-3 text-lg shadow-custom rounded-xl w-72 ">
+                        <div class="flex items-center justify-center w-10 rounded-full h-11 bg-background ">
+                            <i class="text-xl fa-solid fa-user"></i>
+                        </div>
+                        <div class="flex flex-col">
+                            <h1 class="font-semibold">Travelers</h1>
+                                <span class="text-xs text-gray-700">Add guests</span>
+                            </div>
+                    </div>
+                    <div id="checkin" class="flex items-center gap-3 py-5 pl-3 text-lg shadow-custom rounded-xl w-72 ">
+                        <div class="flex items-center justify-center w-10 rounded-full h-11 bg-background ">
+                            <i class="text-xl fa-regular fa-calendar-days"></i>
+                        </div>
+                        <div class="flex flex-col">
+                            <h1 class="font-semibold">Check in</h1>
+                                <span class="text-xs text-gray-700">add date</span>
+                            </div>
+                    </div>
+                    <div id="checkout" class="flex items-center gap-3 py-5 pl-3 text-lg shadow-custom rounded-xl w-72 ">
+                        <div class="flex items-center justify-center w-10 rounded-full h-11 bg-background ">
+                            <i class="text-xl fa-regular fa-calendar-days"></i>
+                        </div>
+                        <div class="flex flex-col">
+                            <h1 class="font-semibold">Check out</h1>
+                                <span class="text-xs text-gray-700">Add date</span>
+                            </div>
+                    </div>
+             </div>
+             <div id="serchButton">
+                <div class="flex items-center justify-center w-16 h-16 mx-auto mt-6 rounded-full bg-blue">
+                    <i class="text-2xl text-white fa-solid fa-magnifying-glass"></i>
+                </div>
+             </div>
+     </section>
+ </main>
+
+ <!-- PLAN YOUR TRAVEL -->
+  <section id="planYourTravel" class="">
+    <!-- text -->
+    <div id="travelSupport" class="py-10 pt-20 pb-14">
+        <h1 class="font-medium tracking-widest text-center ">TRAVEL SUPPORT</h1>
+       <div>
+        <h1 class="px-4 my-4 text-4xl font-semibold tracking-tight text-center md:tracking-normal lg:tracking-wide lg:text-5xl">Plan your travel with confidence</h1>
+        <p class="flex mx-auto text-xs leading-relaxed text-center text-gray-700 md:w-fit w-80 lg:text-sm">Find help with your booking and travel plans, and see what to expect along your journey.</p>
+       </div>
+    </div>
+
+    <!-- three images section  -->
+     <div id="features" class="flex flex-col items-center justify-center md:flex-row-reverse lg:px-14 xl:pt-16 md:pt-8">
+    <div id="parentImage" class="relative w-1/2 xl:w-1/3 mr-24 max-[360px]:scale-50  min-[550px]:mr-14 scale-75  md:mr-0 md:scale-[80%] xl:scale-90 h-96 xl:-ml-12">
+        <div id="image" class="absolute -bottom-8 z-30 md:-bottom-20 w-64  rounded-t-full rounded-b-full -left-20  h-[23rem] ">
+        <img src="https://images.unsplash.com/photo-1517429128955-67ff5c1e29da?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="object-cover w-full h-full rounded-t-full rounded-b-full" >
+        </div>
+        <div id="image" class="absolute z-20 w-64 rounded-t-full rounded-b-full bottom-20 md:bottom-16 left-20 h-96 ">
+            <img src="https://images.unsplash.com/photo-1519666336592-e225a99dcd2f?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="object-cover w-full h-full rounded-t-full rounded-b-full" >
+            </div>
+     <div id="image" class="absolute w-64  rounded-t-full rounded-b-full md:left-48 left-44 -bottom-8 md:-bottom-20 h-[23.5rem] scale-90">
+                <img src="https://images.unsplash.com/photo-1517999349371-c43520457b23?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="object-cover w-full h-full rounded-t-full rounded-b-full" >
+                </div>
+    </div>
+<div id="featureText" class="px-10 py-4 space-y-6 xl:w-2/3 md:w-1/2 h-96">
+    <div id="one" class="space-y-2">
+        <h1 class="px-5 py-2 font-semibold text-white rounded-full bg-blue w-fit">01</h1>
+        <h1 class="text-lg font-semibold md:text-xl">Travel requirements for Dubai</h1>
+        <h1 class="text-sm text-gray-700">Flivain is by far one of the best travel websites for searching tarvel deals.</h1>
+    </div>
+    <div id="two" class="space-y-2">
+        <h1 class="px-5 py-2 font-semibold text-white rounded-full bg-dark w-fit">02</h1>
+        <h1 class="text-lg font-semibold md:text-xl">Multi-risk travel insurance</h1>
+        <h1 class="text-sm text-gray-700">Flivain is by far one of the best travel websites for searching tarvel deals.</h1>
+    </div>
+    <div id="three" class="space-y-2">
+        <h1 class="px-5 py-2 font-semibold text-white rounded-full bg-light w-fit">03</h1>
+        <h1 class="text-lg font-semibold md:text-xl">Travel requirements by Destination</h1>
+        <h1 class="text-sm text-gray-700">Flivain is by far one of the best travel websites for searching tarvel deals.</h1>
+    </div>
+</div>
+     </div>
+
+  </section>
+
+
+  <!-- MAKE MEMORIES -->
+  <section id="makeMemories" class="py-16 mt-28 bg-background">
+  
+    <div id="text" class="flex flex-col items-center justify-between xl:px-10 md:flex-row">
+        <h1 class="px-4 my-4 text-4xl font-semibold tracking-tight text-center md:tracking-normal lg:tracking-wide lg:text-5xl md:w-[80%]">Travel to make memories all around the world</h1>
+        <button class="w-32 text-sm font-medium border border-gray-500 rounded-full h-11 px-7">
+            <a href="#">View All</a>
+        </button>
+        
+    </div>
+    <div id="cards" class="flex flex-wrap items-center justify-center gap-8 mt-10 mmd:gap-12">
+        <div id="card" class="flex mt-5 flex-col items-center justify-center bg-white rounded-t-full rounded-b-full w-[18rem] h-[25rem] gap-5 shadow-sm">
+            <div class="flex items-center justify-center w-20 h-20 text-white rounded-full bg-blue">
+                <i class="text-3xl fa-regular fa-calendar-days"></i>
+            </div>
+            <h1 class="text-lg font-bold md:text-xl">Book & Relax</h1>
+            <p class="text-sm text-gray-700 w-[70%] text-center">We require ideas from simple to complex, everything becomes easy to use.</>
+        </div>
+        <div id="card" class="flex flex-col items-center justify-center bg-white rounded-t-full rounded-b-full w-[18rem] h-[25rem] gap-5 shadow-sm">
+            <div class="flex items-center justify-center w-20 h-20 text-white rounded-full bg-dark">
+                <i class="text-3xl fa-solid fa-clipboard-list"></i>
+            </div>
+            <h1 class="text-lg font-bold md:text-xl">Smart Checklist</h1>
+            <p class="text-sm text-gray-700 w-[70%] text-center">Flight booking in your mind looking for a cheap airfares is your one-stop.</>
+        </div>
+        <div id="card" class="flex flex-col items-center justify-center bg-white rounded-t-full rounded-b-full w-[18rem] h-[25rem] gap-5 shadow-sm">
+            <div class="flex items-center justify-center w-20 h-20 text-white rounded-full bg-light">
+                <i class="text-3xl fa-solid fa-dollar-sign"></i>
+            </div>
+            <h1 class="text-lg font-bold md:text-xl">Book & Relax</h1>
+            <p class="text-sm text-gray-700 w-[70%] text-center">We require ideas from simple to complex, everything becomes easy to use.</>
+        </div>
+    </div>
+  </section>
+
+
+  <!-- UNCOMPANIED MINORS LOUNGE -->
+  <section id="#longue" class="mt-16 lg:px-10"> 
+        <div class="flex flex-col lg:gap-20 lg:flex-row">
+            <div id="parentImage" class="md:w-1/2 scale-75 max-[320px]:scale-[50%] max-[320px]:-ml-28  relative -ml-20  h-[27rem] min-[500px]:-ml-8 min-[560px]:-ml-3 min-[620px]:ml-3 min-[670px]:ml-7 min-[650px]:scale-[80%] lg:scale-[85%] md:ml-28 min-[820px]:-ml-12 min-[830px]:ml-24 min-[1000px]:-ml-10">
+                <div class="  left-16 w-80 h-[27rem] absolute">
+                        <img src="https://images.unsplash.com/photo-1540339832862-474599807836?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"   class="object-cover w-full h-full rounded-t-full rounded-b-full ">
+                </div>
+                <div class=" z-10 left-60 top-20 w-72 h-[25rem] absolute">
+                    <img src="https://images.unsplash.com/photo-1615561916422-7014e1078997?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"   class="object-cover w-full h-full rounded-t-full rounded-b-full ">
+            </div>
+            </div>
+            <div id="text" class="w-full ">
+                <h1 class="px-4 my-4 text-4xl font-semibold tracking-tight text-center lg:text-start md:tracking-normal lg:tracking-wide lg:text-5xl lg:pl-[5rem] ">Unaccompanied Minors <br> Lounge</h1>
+                <div  id="cards" class="flex flex-wrap items-center justify-center gap-6 my-8 " >
+<div id="card" class="p-4 space-y-2 shadow rounded-xl w-80">
+    <h1 class="text-lg font-semibold ">Help through the airport</h1>
+    <p class="text-sm text-gray-700 w-72">They'll step wit everyone all the way through the airport to help them at security card immigration</p>
+</div>
+<div id="card" class="p-4 space-y-2 shadow rounded-xl w-80">
+    <h1 class="text-lg font-semibold ">Priority Boarding</h1>
+    <p class="text-sm text-gray-700 w-72">They'll step wit everyone all the way through the airport to help them at security card immigration and everyone are very helpful to every one</p>
+</div>
+<div id="card" class="p-4 space-y-2 shadow rounded-xl w-80">
+    <h1 class="text-lg font-semibold ">Care on the flight</h1>
+    <p class="text-sm text-gray-700 w-72">Out of the everything they are always there to help and make you feel comfortable and bring some freshners</p>
+</div>
+<div id="card" class="p-4 space-y-2 shadow rounded-xl w-80">
+    <h1 class="text-lg font-semibold ">Support when they land</h1>
+    <p class="text-sm text-gray-700 w-72">The crew members are very supportive to when it comes to landing and every one will help each othe in landing safely.</p>
+</div>
+                </div>
+            </div>
+        </div>
+  </section>
+
+  <!-- BEST TRAVELS OF MONTH -->
+  <section id="bestTravel" class="py-10">
+    <h1 class="px-4 my-8 text-4xl font-semibold tracking-tight text-center md:tracking-normal lg:tracking-wide lg:text-5xl">Best travelers of Month</h1>
+    <div id="cards" class="flex flex-wrap items-center justify-center gap-8 pt-10">
+        <div id="card" class="relative w-72 h-[27rem] shadow-md rounded-t-full rounded-b-full">
+            <img src="https://images.unsplash.com/photo-1439393161192-32360eb753f1?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="object-cover w-full h-full rounded-t-full rounded-b-full">
+            <div class="absolute bottom-0 bg-white rounded-b-full w-72 h-44 ">  
+                <div class="absolute w-16 h-16  left-[7.5rem]  -top-6">
+                    <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?cs=srgb&dl=pexels-pixabay-415829.jpg&fm=jpg" class="object-cover w-full h-full rounded-full ring-8 ring-white">
+                </div>
+                <div class="pt-16">
+                    <h1 class="text-lg font-semibold text-center">Williom lion</h1>
+                <p class="text-sm text-center text-gray-700">@williom_lion</p>
+                </div>
+            </div>
+        </div>
+        <div id="card" class="relative w-72 h-[27rem] shadow-md rounded-t-full rounded-b-full">
+            <img src="https://images.unsplash.com/flagged/photo-1559717865-a99cac1c95d8?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="object-cover w-full h-full rounded-t-full rounded-b-full">
+            <div class="absolute bottom-0 bg-white rounded-b-full w-72 h-44 ">  
+                <div class="absolute w-16 h-16  left-[7.5rem]  -top-6">
+                    <img src="https://images.pexels.com/photos/1300402/pexels-photo-1300402.jpeg?cs=srgb&dl=pexels-mastercowley-1300402.jpg&fm=jpg" class="object-cover w-full h-full rounded-full ring-8 ring-white">
+                </div>
+                <div class="pt-16">
+                    <h1 class="text-lg font-semibold text-center">Joseph Leon</h1>
+                <p class="text-sm text-center text-gray-700">@Joseph_leon</p>
+                </div>
+            </div>
+        </div>
+        <div id="card" class="relative w-72 h-[27rem] shadow-md rounded-t-full rounded-b-full">
+            <img src="https://images.unsplash.com/photo-1546412414-e1885259563a?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="object-cover w-full h-full rounded-t-full rounded-b-full">
+            <div class="absolute bottom-0 bg-white rounded-b-full w-72 h-44 ">  
+                <div class="absolute w-16 h-16  left-[7.5rem]  -top-6">
+                    <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?cs=srgb&dl=pexels-justin-shaifer-501272-1222271.jpg&fm=jpg" class="object-cover w-full h-full rounded-full ring-8 ring-white">
+                </div>
+                <div class="pt-16">
+                    <h1 class="text-lg font-semibold text-center">Akrmi Lao</h1>
+                <p class="text-sm text-center text-gray-700">@laka_miyu</p>
+                </div>
+            </div>
+        </div>
+        <div id="card" class="relative w-72 h-[27rem] shadow-md rounded-t-full rounded-b-full">
+            <img src="https://images.unsplash.com/photo-1459787915554-b34915863013?q=80&w=1533&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="object-cover w-full h-full rounded-t-full rounded-b-full">
+            <div class="absolute bottom-0 bg-white rounded-b-full w-72 h-44 ">  
+                <div class="absolute w-16 h-16  left-[7.5rem]  -top-6">
+                    <img src="https://sources.roboflow.com/dzuGOec8v6bRLhxo590fQ69a22N2/cNc6Q78185vhZDZhqEdS/original.jpg" class="object-cover w-full h-full rounded-full ring-8 ring-white">
+                </div>
+                <div class="pt-16">
+                    <h1 class="text-lg font-semibold text-center">Hunao Deno</h1>
+                <p class="text-sm text-center text-gray-700">@Hunao_deno</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+
+
+  <!-- FOOTER SECTION -->
+  <footer class="relative py-32 mt-8 space-y-5 bg-background">
+<div id="text" class="pb-4 mx-auto">
+    <h1 class="text-4xl font-semibold text-center">Subscribe Newsletters & <br>get latest News</h1>
+</div>
+<div id="input" class="relative mx-auto text-center scale-[76%]  sm:scale-100 w-fit">
+    <input type="email" placeholder="Enter your E-mail address" class="px-4 outline-none text-sm font-medium rounded-full py-6 w-[28rem]">
+    <button class="absolute px-10 py-4 text-sm text-white rounded-full right-2 top-2 bg-blue">
+        <a href="#">Subscribe Now</a>
+    </button>
+</div>
+
+<p class="absolute w-full mx-auto text-xs text-center bottom-5">&copy; Copyright | Only for education purpose</p>
+  </footer>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
