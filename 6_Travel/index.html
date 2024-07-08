@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel. - travelling made easy</title>
+    <link rel="stylesheet" href="output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="font-poppins">
+    <!-- NAVBAR STARTS HERE -->
+    <header class="z-50 bg-white">
+      <nav
+        class="relative top-0 z-50 flex items-center justify-between w-full px-5 py-4 bg-white shadow md:py-5 lg:px-24 md:px-10 sm:px-8"
+      >
+        <!-- logo -->
+        <div id="logo" class="flex items-center gap-2">
+          <div
+            class="relative flex items-center w-8 h-8 overflow-hidden text-white rounded-md bg-blue justify-normal"
+          >
+            <i
+              class="fa-solid -bottom-0.5 right-2 fa-plane text-2xl scale-110 -rotate-[40deg] absolute"
+            ></i>
+          </div>
+          <h1 class="text-3xl font-bold font-poppins">
+            Travel<span class="text-blue">.</span>
+          </h1>
+        </div>
+        <!-- links -->
+        <div id="links" class="hidden md:block">
+          <ul class="flex items-center gap-6 font-medium">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Packages</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="flex items-center gap-3">
+          <!-- login -->
+          <div id="login" class="hidden sm:block">
+            <button
+              class="py-2 font-light text-white scale-95 rounded-lg bg-blue px-7 md:scale-100 font-poppins hover:bg-opacity-90"
+            >
+              Log in
+            </button>
+          </div>
+          <div
+            id="toggler"
+            class="flex items-center justify-center w-8 h-8 cursor-pointer md:hidden"
+          >
+            <i id="bars" class="text-2xl fa-solid fa-bars"></i>
+          </div>
+        </div>
+        <!-- mobile navbar -->
+        <div
+          id="mobileNavbar"
+          class="absolute right-0 z-50 hidden w-56 scale-90 bg-white border border-gray-300 top-16 md:hidden rounded-xl h-80"
+        >
+          <ul
+            class="flex flex-col items-center gap-4 mt-10 text-lg font-medium sm:gap-6"
+          >
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Packages</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <button
+              class="py-2 font-light text-white scale-95 rounded-lg bg-blue px-7 md:scale-100 font-poppins hover:bg-opacity-90 sm:hidden"
+            >
+              Log in
+            </button>
+            <li></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- HERO BANNER SECTION -->
+    <section class="relative">
+      <!-- HERO SECTION STARTS HERE -->
+      <div
+        id="topHero"
+        class="relative flex items-center justify-center px-4 mt-8 md:mt-11s lg:px-16 md:px-10"
+      >
+        <!-- TOP IMAGE BANNER -->
+        <div id="topBanner" class="w-full rounded-[3rem] py-5 pb-20">
+          <div
+            id="postionGiver"
+            class="flex flex-col items-center justify-center md:gap-14 md:flex-row-reverse"
+          >
+            <div id="image">
+              <img
+                src="images/1.png"
+                alt="travel image"
+                class="w-[22rem] md:w-[26rem] p-3"
+              />
+            </div>
+            <div
+              id="text"
+              class="px-6 space-y-2.5 md:space-y-3 lg:space-y-4 md:py-10 lg:py-5 text-center md:text-start"
+            >
+              <h1 class="text-4xl font-bold md:text-6xl lg:text-7xl">
+                Find Next Place <br class="hidden lg:block" />
+                To Visit
+              </h1>
+              <p class="text-regulartext">
+                We always make our customer happy by providing as many<br
+                  class="hidden xl:block"
+                />
+                choises as possible
+              </p>
+              <button
+                class="py-2 lg:py-2.5 font-light text-white rounded-lg bg-blue px-7 font-poppins hover:bg-opacity-90"
+              >
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- EXPLORE SECTION STARTS HERE -->
+      <div class="absolute w-full px-10 -mt-12 xl:-mt-16 lg:px-24 md:px-16">
+        <div
+          id="exploreSection"
+          class="z-10 py-3 bg-white border border-gray-300 rounded-2xl"
+        >
+          <div
+            id="choose"
+            class="flex items-center justify-center gap-2 scale-90 sm:scale-100 text-regulartext"
+          >
+            <h1 class="px-4 py-3 text-white bg-blue rounded-xl">
+              <span class="hidden">Choose </span>Travel Plan
+            </h1>
+            <h1 class="px-4 py-3 bg-gray-100 rounded-xl">Airlines</h1>
+            <h1 class="px-4 py-3 bg-gray-100 rounded-xl">Hotel</h1>
+          </div>
+
+          <!-- INPUT FIELDS -->
+          <div
+            id="inputFieldsAndButtons"
+            class="flex flex-col items-center justify-center gap-4 px-3 mt-3 lg:mt-4 xl:mt-5 lg:flex-row"
+          >
+            <div
+              id="location"
+              class="flex items-center gap-3 px-3 py-3 pl-5 border border-gray-300 sm:px-5 rounded-xl"
+            >
+              <div
+                class="flex items-center justify-center w-12 h-12 border border-gray-300 rounded-md"
+              >
+                <i class="text-xl fa-solid fa-location-dot text-blue"></i>
+              </div>
+              <div class="lg:scale-90 xl:scale-100">
+                <h1 class="text-regulartext">
+                  Location
+                  <i class="text-sm fa-solid fa-chevron-down text-blue"></i>
+                </h1>
+                <h1 class="text-xl font-bold">Santorini, Greece</h1>
+              </div>
+            </div>
+            <div
+              id="date"
+              class="flex items-center gap-3 px-3 py-3 pl-5 border border-gray-300 rounded-xl sm:px-10"
+            >
+              <div
+                class="flex items-center justify-center w-12 h-12 border border-gray-300 rounded-md"
+              >
+                <i class="text-xl fa-regular fa-calendar-days text-blue"></i>
+              </div>
+              <div class="lg:scale-90 xl:scale-100">
+                <h1 class="text-regulartext">
+                  Date
+                  <i class="text-sm fa-solid fa-chevron-down text-blue"></i>
+                </h1>
+                <h1 class="text-xl font-bold">MM/DD/YYYY</h1>
+              </div>
+            </div>
+            <div
+              id="price"
+              class="flex items-center gap-3 px-3 py-3 pl-5 border border-gray-300 sm:px-10 rounded-xl"
+            >
+              <div
+                class="flex items-center justify-center w-12 h-12 border border-gray-300 rounded-md"
+              >
+                <i class="text-xl fa-solid fa-dollar-sign text-blue"></i>
+              </div>
+              <div class="lg:scale-90 xl:scale-100">
+                <h1 class="text-regulartext">
+                  Average Price
+                  <i class="text-sm fa-solid fa-chevron-down text-blue"></i>
+                </h1>
+                <h1 class="text-xl font-bold">$500 - $1000</h1>
+              </div>
+            </div>
+            <div>
+              <button
+                class="px-16 py-5 font-light text-white scale-95 rounded-lg lg:py-5 bg-blue md:scale-100 font-poppins hover:bg-opacity-90"
+              >
+                Explore Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPLORE TOP DESTINATION -->
+    <section class="mt-[27rem] lg:mt-48">
+      <div class="text-center heroText px-2 space-y-2">
+        <h1 class="text-4xl font-semibold">Explore Top Destionation</h1>
+        <p class="text-regulartext leading-snug tracking-tight">
+          Great Opportunities To travel | Take A Holiday | Visit Family | Enjoy
+          Yourself
+        </p>
+      </div>
+
+      <div
+        id="cards"
+        class="flex flex-wrap items-center justify-center gap-8 mt-10"
+      >
+        <div id="card" class="h-[29rem] w-80 rounded-2xl mb-20">
+          <img
+            src="https://images.unsplash.com/photo-1497262693247-aa258f96c4f5?q=80&w=1576&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="object-cover w-full h-full rounded-2xl"
+            alt=""
+          />
+          <h1 class="text-black font-bold text-xl mt-3">Santorini,Greece</h1>
+          <div class="flex text-sm items-center justify-between">
+            <div class="text-regulartext">
+              <h1><i class="fa-solid fa-location-dot"></i> Greece</h1>
+            </div>
+            <div class="bg-regulartext bg-opacity-10 rounded-full px-3 py-2">
+              <h1>
+                <i class="fa-solid fa-star text-yellow-500"></i> 4.8 (1.4k)
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div id="card" class="h-[29rem] w-80 rounded-2xl mb-20">
+          <img
+            src="https://images.unsplash.com/photo-1583417123076-ab17044e5982?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="object-cover w-full h-full rounded-2xl"
+            alt=""
+          />
+          <h1 class="text-black font-bold text-xl mt-3">Moraine Lake</h1>
+          <div class="flex text-sm items-center justify-between">
+            <div class="text-regulartext">
+              <h1><i class="fa-solid fa-location-dot"></i> Canada</h1>
+            </div>
+            <div class="bg-regulartext bg-opacity-10 rounded-full px-3 py-2">
+              <h1>
+                <i class="fa-solid fa-star text-yellow-500"></i> 4.6 (1.6k)
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div id="card" class="h-[29rem] w-80 rounded-2xl mb-20">
+          <img
+            src="https://images.unsplash.com/photo-1541410965313-d53b3c16ef17?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="object-cover w-full h-full rounded-2xl"
+            alt=""
+          />
+          <h1 class="text-black font-bold text-xl mt-3">Lake Thun</h1>
+          <div class="flex text-sm items-center justify-between">
+            <div class="text-regulartext">
+              <h1><i class="fa-solid fa-location-dot"></i> Switzerland</h1>
+            </div>
+            <div class="bg-regulartext bg-opacity-10 rounded-full px-3 py-2">
+              <h1>
+                <i class="fa-solid fa-star text-yellow-500"></i> 4.2 (1.3k)
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WE OFFER BEST SERVVICES -->
+    <section id="Services" class="pt-8 lg:pt-28">
+      <div
+        id="postioner"
+        class="flex flex-col items-center justify-center lg:gap-20 lg:flex-row-reverse"
+      >
+        <div id="rightImage">
+          <img
+            src="images/5.png"
+            class="w-96 lg:w-[26rem] bg-shadow rounded-full"
+          />
+        </div>
+        <div id="leftText" class="px-7 pt-8 lg:pt-0">
+          <div id="toptext" class="pb-5 space-y-2">
+            <h1 class="text-blue font-medium text-xl">Traveler Point</h1>
+            <h1
+              class="text-3xl font-semibold lg:text-4xl capitalize xl:text-5xl"
+            >
+              We offer best services
+            </h1>
+          </div>
+          <div id="points" class="space-y-3">
+            <div
+              id="point1"
+              class="flex items-center gap-2.5 bg-gray-200 bg-opacity-80 rounded-md py-2 px-2.5 lg:px-5 lg:py-4"
+            >
+              <div id="image">
+                <img src="images/p1.png" class="w-12" />
+              </div>
+              <div id="pointText" class="leading-snug group cursor-pointer">
+                <h1 class="font-semibold text-lg">Best Travel Pack</h1>
+                <p class="text-regulartext tracking-tight group-hover:block">
+                  Great Opportunities to travel to enjoy yourself
+                </p>
+              </div>
+            </div>
+            <div
+              id="point2"
+              class="flex items-center gap-1.5 bg-gray-200 bg-opacity-80 rounded-md py-2 px-2.5 lg:px-5 lg:py-4"
+            >
+              <div id="image">
+                <img src="images/p2.png" class="w-[4.5rem] -ml-1 -mr-3" />
+              </div>
+              <div id="pointText" class="leading-snug group cursor-pointer">
+                <h1 class="font-semibold text-lg">Airline Best Flight</h1>
+                <p
+                  class="text-regulartext tracking-tight hidden group-hover:block"
+                >
+                  Great Opportunities to travel to enjoy yourself
+                </p>
+              </div>
+            </div>
+            <div
+              id="point3"
+              class="flex items-center gap-2.5 bg-gray-200 bg-opacity-80 rounded-md py-2 px-2.5 lg:px-5 lg:py-4"
+            >
+              <div id="image">
+                <img src="images/p3.png" class="w-12" />
+              </div>
+              <div id="pointText" class="leading-snug group cursor-pointer">
+                <h1 class="font-semibold text-lg">East Booking</h1>
+                <p
+                  class="text-regulartext tracking-tight hidden group-hover:block"
+                >
+                  Great Opportunities to travel to enjoy yourself
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR EXPERIENCE -->
+    <section id="Services" class="pt-20 lg:pt-28">
+      <div
+        id="postioner"
+        class="flex flex-col items-center justify-center lg:gap-20 lg:flex-row"
+      >
+        <div id="rightImage">
+          <img
+            src="images/6.png"
+            class="w-96 lg:w-[26rem] bg-shadow rounded-full"
+          />
+        </div>
+        <div id="leftText" class="px-7 pt-8 lg:pt-0">
+          <div id="toptext" class="pb-5 space-y-2">
+            <h1 class="text-blue font-medium text-xl">Our Experience</h1>
+            <h1
+              class="text-3xl font-semibold lg:text-4xl xl:text-5xl capitalize"
+            >
+              With our Experiencey <br />we will serve you
+            </h1>
+          </div>
+          <p class="text-regulartext">
+            Travel agency us a private retailer or public service provides
+            <br />
+            travel and tourism-related services to the general public on <br />
+            behalf of accomodation of travel.
+          </p>
+          <div
+            class="flex items-center justify-between text-regulartext pt-4 flex-wrap gap-2"
+          >
+            <div>
+              <span class="text-4xl font-semibold text-blue">10</span>
+              <h1>Years <br />Experience</h1>
+            </div>
+            <div>
+              <span class="text-4xl font-semibold text-blue">500+</span>
+              <h1>Destination <br />Collaboration</h1>
+            </div>
+            <div>
+              <span class="text-4xl font-semibold text-blue">10K+</span>
+              <h1>Happy <br />Customer</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG SECTION -->
+    <section class="mt-20">
+      <div id="toptext" class="pb-5 space-y-2 px-12 lg:px-24">
+        <h1 class="text-blue font-medium text-xl">Latest Blog</h1>
+        <h1 class="text-4xl font-semibold lg:text-4xl capitalize xl:text-5xl">
+          Updated Blog Post
+        </h1>
+      </div>
+      <div
+        id="blogs"
+        class="flex flex-wrap gap-10 xl:gap-20 mt-4 items-center justify-center rounded-2xl"
+      >
+        <div
+          id="blog1"
+          class="border border-gray-300 h-[28.5rem] w-80 rounded-3xl"
+        >
+          <div id="imagediv" class="h-80 w-80 rounded-3xl scale-90">
+            <img
+              src="https://images.unsplash.com/photo-1502301197179-65228ab57f78?q=80&w=1370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="w-full h-full object-cover rounded-3xl"
+            />
+          </div>
+          <h1
+            class="text-black font-bold text-2xl scale-95 mt-1 capitalize px-2"
+          >
+            Canada tarvel tips you nee to know.
+          </h1>
+          <div class="flex text-sm items-center justify-between">
+            <div class="text-regulartext px-6">
+              <h1>Read More</h1>
+            </div>
+            <div
+              class="bg-regulartext bg-opacity-10 rounded-full px-3 py-2 mr-4"
+            >
+              <h1><i class="fa-solid fa-eye text-blue"></i> (10.4k)</h1>
+            </div>
+          </div>
+        </div>
+        <div
+          id="blog2"
+          class="border border-gray-300 h-[28.5rem] w-80 rounded-3xl"
+        >
+          <div id="imagediv" class="h-80 w-80 rounded-3xl scale-90">
+            <img
+              src="images/8.jpg"
+              class="w-full h-full object-cover rounded-3xl"
+            />
+          </div>
+          <h1
+            class="text-black font-bold text-2xl scale-95 mt-1 capitalize px-2"
+          >
+            Travel guide roules you need to know.
+          </h1>
+          <div class="flex text-sm items-center justify-between">
+            <div class="text-regulartext px-6">
+              <h1>Read More</h1>
+            </div>
+            <div
+              class="bg-regulartext bg-opacity-10 rounded-full px-3 py-2 mr-4"
+            >
+              <h1><i class="fa-solid fa-eye text-blue"></i> (15.4k)</h1>
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="blog3"
+          class="border border-gray-300 h-[28.5rem] w-80 rounded-3xl"
+        >
+          <div id="imagediv" class="h-80 w-80 rounded-3xl scale-90">
+            <img
+              src="images/9.jpg"
+              class="w-full h-full object-cover rounded-3xl"
+            />
+          </div>
+          <h1
+            class="text-black font-bold text-2xl scale-95 mt-1 tracking-tighter capitalize px-2"
+          >
+            travel medical treatment you need to know
+          </h1>
+          <div class="flex text-sm items-center justify-between">
+            <div class="text-regulartext px-6">
+              <h1>Read More</h1>
+            </div>
+            <div
+              class="bg-regulartext bg-opacity-10 rounded-full px-3 py-2 mr-4"
+            >
+              <h1><i class="fa-solid fa-eye text-blue"></i> (5.4k)</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEW -->
+    <section id="review" class="mt-20">
+      <div
+        id="postioner"
+        class="flex flex-col lg:flex-row items-center justify-center"
+      >
+        <div id="text" class="pb-8">
+          <div id="toptext" class="pb-5 space-y-2 px-12 lg:px-24">
+            <h1 class="text-blue font-medium text-xl">What They Say</h1>
+            <h1
+              class="text-4xl font-semibold lg:text-4xl capitalize xl:text-5xl"
+            >
+              what our coustomer say about us
+            </h1>
+          </div>
+          <div class="px-12 lg:px-24 space-y-4">
+            <p class="text-regulartext">
+              " I can't speak higly enough about our 3 week trip to this <br />
+              place and the service provided by this travel company. <br />Price
+              offered is very worth it.
+            </p>
+
+            <h1 class="font-semibold">
+              Jennifa Lopez .
+              <span class="text-regulartext">Food Enthusiast</span>
+            </h1>
+
+            <div class="space-x-2">
+              <i class="fa-solid fa-star text-yellow-500"></i
+              ><i class="fa-solid fa-star text-yellow-500"></i
+              ><i class="fa-solid fa-star text-yellow-500"></i
+              ><i class="fa-solid fa-star text-yellow-500"></i
+              ><i class="fa-solid fa-star text-yellow-500"></i>
+            </div>
+          </div>
+        </div>
+        <div id="image" class="relative lg:pr-10">
+          <img
+            src="images/map.png"
+            class="w-[26rem] sm:w-[28rem] md:w-[36rem] lg:w-[40rem] xl:w-[50rem]"
+            alt=""
+          />
+          <div
+            class="w-12 h-12 ring-white rounded-full ring-4 top-5 left-4 absolute"
+          >
+            <img
+              src="images/m1.jpg"
+              class="w-full h-full object-cover rounded-full"
+              alt=""
+            />
+          </div>
+          <div
+            class="w-12 h-12 ring-white rounded-full ring-4 top-5 right-20 absolute"
+          >
+            <img
+              src="images/m2.jpg"
+              class="w-full h-full object-cover rounded-full"
+              alt=""
+            />
+          </div>
+          <div
+            class="w-12 h-12 ring-white rounded-full ring-4 bottom-2 left-20 absolute"
+          >
+            <img
+              src="images/m3.jpg"
+              class="w-full h-full object-cover rounded-full"
+              alt=""
+            />
+          </div>
+          <div
+            class="w-12 h-12 ring-white rounded-full ring-4 bottom-8 right-16 absolute"
+          >
+            <img
+              src="images/m4.jpg"
+              class="w-full h-full object-cover rounded-full"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABSOLUTUE DIV ON SMALL SCREENS -->
+    <div
+    id="absoluteDiv"
+    class="w-[23rem] h-[28rem] bg-white border border-gray-300 rounded-[1rem]  mx-auto mt-14  px-4 py-4 lg:hidden"
+  >
+    <h1 class="font-medium">Participants</h1>
+    <div id="images" class="flex mt-2">
+      <div class="w-12 h-12 rounded-full">
+        <img
+          src="images/m1.jpg"
+          class="w-full h-full object-cover rounded-full ring-4 ring-white"
+          alt=""
+        />
+      </div>
+      <div class="w-12 h-12 rounded-full">
+        <img
+          src="images/m3.jpg"
+          class="w-full h-full object-cover rounded-full ring-4 ring-white"
+          alt=""
+        />
+      </div>
+      <div
+        class="w-12 h-12 rounded-full bg-[#051932] ring-4 ring-white  flex items-center justify-center text-3xl text-white"
+      >
+        +
+      </div>
+    </div>
+    <div class="mt-6 flex justify-between items-center">
+      <div id="info" class="pl-1">
+        <div class="space-x-1">
+          <span class="font-medium">Info</span>
+          <span class="rounded-md bg-gray-100"
+            ><i class="fa-solid fa-chevron-down text-sm px-1"></i
+          ></span>
+        </div>
+      </div>
+      <div id="symbols" class="text-xl pr-6 space-x-1">
+        <i class="fa-solid fa-tag text-blue"></i>
+        <i class="fa-solid fa-plane-up text-orange-500"></i>
+        <i class="fa-solid fa-toggle-on text-green-500"></i>
+      </div>
+    </div>
+
+    <!-- boxes of absolute div -->
+    <div class="flex flex-col -space-y-12">
+      <div id="row1" class="flex scale-95 gap-5">
+        <div id="card" class="w-40 h-32 flex gap-2.5 items-center">
+          <div
+            class="h-12 w-12 flex items-center justify-center bg-green-100 rounded-xl"
+          >
+            <i class="fa-solid text-green-500 fa-calendar-days"></i>
+          </div>
+          <div>
+            <h1 class="text-sm font-medium">Date</h1>
+            <h1 class="text-regulartext text-sm">20 June, 2022</h1>
+          </div>
+        </div>
+        <div id="card" class="w-40 h-32 flex gap-2.5 items-center">
+          <div
+            class="h-12 w-12 flex items-center justify-center bg-violet-100 rounded-xl"
+          >
+            <i class="fa-solid text-violet-500 fa-user-plus"></i>
+          </div>
+          <div>
+            <h1 class="text-sm font-medium">Guests</h1>
+            <h1 class="text-regulartext text-sm">Yes</h1>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="row2" class="flex scale-95 gap-5">
+        <div id="card" class="w-40 h-32 flex gap-2.5 items-center">
+          <div
+            class="h-12 w-12 flex items-center justify-center bg-blue bg-opacity-10 rounded-xl"
+          >
+            <i class="fa-solid text-blue fa-clock"></i>
+          </div>
+          <div>
+            <h1 class="text-sm font-medium">Time</h1>
+            <h1 class="text-regulartext text-sm tracking-tighter">20 Jun - 30 Jun</h1>
+          </div>
+        </div>
+        <div id="card" class="w-40 h-32 flex gap-2.5 items-center">
+          <div
+            class="h-12 w-12 flex items-center justify-center bg-orange-100 rounded-xl"
+          >
+            <i class="fa-solid text-orange-500 fa-dollar"></i>
+          </div>
+          <div>
+            <h1 class="text-sm font-medium">Price</h1>
+            <h1 class="text-regulartext text-sm">$1K</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="buttons" class="bg-blue bg-opacity-10 w-[20rem] h-[5rem]  -mt-2 rounded-xl flex items-center justify-center gap-6">
+      <button class="bg-blue bg-opacity-20 text-blue px-4 py-1.5 rounded-md text-sm font-semibold">Reschedule</button>
+      <button class="bg-blue text-white px-6 py-1.5 rounded-md text-sm font-medium">Join Trip</button>
+    </div>
+  </div>
+
+    <!-- EXPLORE THE BEAUTY -->
+    <section class="explore the beauty lg:mt-72 mt-14">
+      <div
+        id="mainBlue"
+        class="w-[90%] h-80 bg-[#051932] rounded-[2rem] mx-auto flex items-center relative"
+      >
+        <h1
+          class="text-white text-5xl font-semibold capitalize lg:pl-10 leading-relaxed px-4 "
+        >
+          Let's explore the beauty <br />
+          of the world
+        </h1>
+        <div
+          id="absoluteDiv"
+          class="w-[23rem] h-[28rem] bg-white border border-gray-300 rounded-[1rem] absolute right-12 bottom-8 px-4 py-4 hidden lg:block"
+        >
+          <h1 class="font-medium">Participants</h1>
+          <div id="images" class="flex mt-2">
+            <div class="w-12 h-12 rounded-full">
+              <img
+                src="images/m1.jpg"
+                class="w-full h-full object-cover rounded-full ring-4 ring-white"
+                alt=""
+              />
+            </div>
+            <div class="w-12 h-12 rounded-full">
+              <img
+                src="images/m3.jpg"
+                class="w-full h-full object-cover rounded-full ring-4 ring-white"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-12 h-12 rounded-full bg-[#051932] ring-4 ring-white flex items-center justify-center text-3xl text-white"
+            >
+              +
+            </div>
+          </div>
+          <div class="mt-6 flex justify-between items-center">
+            <div id="info" class="pl-1">
+              <div class="space-x-1">
+                <span class="font-medium">Info</span>
+                <span class="rounded-md bg-gray-100"
+                  ><i class="fa-solid fa-chevron-down text-sm px-1"></i
+                ></span>
+              </div>
+            </div>
+            <div id="symbols" class="text-xl pr-6 space-x-1">
+              <i class="fa-solid fa-tag text-blue"></i>
+              <i class="fa-solid fa-plane-up text-orange-500"></i>
+              <i class="fa-solid fa-toggle-on text-green-500"></i>
+            </div>
+          </div>
+
+          <!-- boxes of absolute div -->
+          <div class="flex flex-col -space-y-12">
+            <div id="row1" class="flex scale-95 gap-5">
+              <div id="card" class="w-40 h-32 flex gap-2.5 items-center">
+                <div
+                  class="h-12 w-12 flex items-center justify-center bg-green-100 rounded-xl"
+                >
+                  <i class="fa-solid text-green-500 fa-calendar-days"></i>
+                </div>
+                <div>
+                  <h1 class="text-sm font-medium">Date</h1>
+                  <h1 class="text-regulartext text-sm">20 June, 2022</h1>
+                </div>
+              </div>
+              <div id="card" class="w-40 h-32 flex gap-2.5 items-center">
+                <div
+                  class="h-12 w-12 flex items-center justify-center bg-violet-100 rounded-xl"
+                >
+                  <i class="fa-solid text-violet-500 fa-user-plus"></i>
+                </div>
+                <div>
+                  <h1 class="text-sm font-medium">Guests</h1>
+                  <h1 class="text-regulartext text-sm">Yes</h1>
+                </div>
+              </div>
+            </div>
+  
+  
+            <div id="row2" class="flex scale-95 gap-5">
+              <div id="card" class="w-40 h-32 flex gap-2.5 items-center">
+                <div
+                  class="h-12 w-12 flex items-center justify-center bg-blue bg-opacity-10 rounded-xl"
+                >
+                  <i class="fa-solid text-blue fa-clock"></i>
+                </div>
+                <div>
+                  <h1 class="text-sm font-medium">Time</h1>
+                  <h1 class="text-regulartext text-sm tracking-tighter">20 Jun - 30 Jun</h1>
+                </div>
+              </div>
+              <div id="card" class="w-40 h-32 flex gap-2.5 items-center">
+                <div
+                  class="h-12 w-12 flex items-center justify-center bg-orange-100 rounded-xl"
+                >
+                  <i class="fa-solid text-orange-500 fa-dollar"></i>
+                </div>
+                <div>
+                  <h1 class="text-sm font-medium">Price</h1>
+                  <h1 class="text-regulartext text-sm">$1K</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div id="buttons" class="bg-blue bg-opacity-10 w-[20rem] h-[5rem]  -mt-2 rounded-xl flex items-center justify-center gap-6">
+            <button class="bg-blue bg-opacity-20 text-blue px-4 py-1.5 rounded-md text-sm font-semibold">Reschedule</button>
+            <button class="bg-blue text-white px-6 py-1.5 rounded-md text-sm font-medium">Join Trip</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- FOOTER SECTION STARTS HERE -->
+     <footer>
+      <div
+        class="relative top-0 z-50 flex flex-col md:flex-row items-center justify-between w-full px-5 py-4 bg-white  md:py-5 lg:px-24 md:px-10 sm:px-8 md:pt-20 "
+      >
+        <!-- logo -->
+        <div id="logo" class="flex items-center gap-2 mb-6 md:mb-0 mt-8 md:mt-0">
+          <div
+            class="relative flex items-center w-8 h-8 overflow-hidden text-white rounded-md bg-blue justify-normal"
+          >
+            <i
+              class="fa-solid -bottom-0.5 right-2 fa-plane text-2xl scale-110 -rotate-[40deg] absolute"
+            ></i>
+          </div>
+          <h1 class="text-3xl font-bold font-poppins">
+            Travel<span class="text-blue">.</span>
+          </h1>
+        </div>
+        <!-- links -->
+        <div id="links" class="mb-3 md:mb-0">
+          <ul class="flex  items-center gap-6 font-medium">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        
+        <div id="socials" class="mt-3 mb-3 md:mt-0 md:mb-0 text-white space-x-2">
+          <i class="fa-brands fa-facebook-f px-[1.2rem] py-4 bg-[#051932] rounded-full"></i>
+          <i class="fa-brands fa-twitter px-4 py-4 bg-[#051932] rounded-full"></i>
+          <i class="fa-brands fa-instagram px-4 py-4 bg-[#051932] rounded-full"></i>
+        </div>
+      
+      </div>
+      <div class="bg-gray-200 w-[85%] h-0.5 mx-auto mb-3 mt-3"></div>
+      <p class="text-regulartext text-center font-medium text-sm py-6 pb-2 ">Copyright &copy; 2024 <span class="text-blue">Travel</span>. All Rights Reserved</p>
+      <p class="pb-10 text-regulartext text-xs text-center ">For Eduaction & Learning Purpose Only</p>
+     </footer>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>

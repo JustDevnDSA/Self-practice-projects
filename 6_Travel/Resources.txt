@@ -1,0 +1,7 @@
+bold & semibold - Gilroy
+regular - poppins
+
+'blue':'#3b71ef',
+'darkblue':'#0d1f35',
+'regulartext':'#565e73',
+'shadow':'#b3e8be',

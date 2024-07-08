@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  #topBanner {
+    background: hsla(171, 68%, 78%, 1);
+
+    background: linear-gradient(
+      360deg,
+      hsla(171, 68%, 78%, 1) 10%,
+      hsla(0, 0%, 100%, 1) 80%
+    );
+
+    background: -moz-linear-gradient(
+      360deg,
+      hsla(171, 68%, 78%, 1) 10%,
+      hsla(0, 0%, 100%, 1) 80%
+    );
+
+    background: -webkit-linear-gradient(
+      360deg,
+      hsla(171, 68%, 78%, 1) 10%,
+      hsla(0, 0%, 100%, 1) 80%
+    );
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#A0EDE1", endColorstr="#FFFFFF", GradientType=1 );
+  }
+  /* For WebKit browsers (Chrome, Safari) */
+  ::-webkit-scrollbar {
+    width: 12px;
+   @apply bg-[#555] bg-opacity-40
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 12px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
